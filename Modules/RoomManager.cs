@@ -77,30 +77,6 @@ namespace diploma_216273.Modules
         queue.Enqueue(value);
     }
 
-    public double[] GetTempHistory(string room)
-    {
-        return tempQueues.ContainsKey(room) ? tempQueues[room].ToArray() : Array.Empty<double>();
-    }
-
-    public double[] GetTempHistory10(string room)
-    {
-        return tempQueues.ContainsKey(room)
-            ? tempQueues[room].Skip(Math.Max(0, tempQueues[room].Count - 10)).ToArray()
-            : Array.Empty<double>();
-    }
-
-    public double[] GetHumHistory(string room)
-    {
-        return humQueues.ContainsKey(room) ? humQueues[room].ToArray() : Array.Empty<double>();
-    }
-
-    public double[] GetHumHistory10(string room)
-    {
-        return humQueues.ContainsKey(room)
-            ? humQueues[room].Skip(Math.Max(0, humQueues[room].Count - 10)).ToArray()
-            : Array.Empty<double>();
-    }
-
         void checkLimits()
         {
             if (tempVal < -20.0 || tempVal > 120.0)
@@ -157,7 +133,6 @@ namespace diploma_216273.Modules
                         labelVentFlag = controller.IsVentOn;
                     }
 
-                    ApplyHardwareState(room, controller.IsHeatOn, controller.IsVentOn);
                 }
 
                 secondCounter++;
@@ -171,11 +146,6 @@ namespace diploma_216273.Modules
                     }
             }
         }
-    }
-
-    private void ApplyHardwareState(string room, bool heatOn, bool ventOn)
-    {
-        // Implement actual hardware IO control here
     }
 }
 

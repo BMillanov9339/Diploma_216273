@@ -90,16 +90,7 @@ namespace diploma_216273
         {
 
         }
-
-        private void rbTimed_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bStartR1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private bool OpenTimedSettings(string room)
         {
@@ -114,7 +105,7 @@ namespace diploma_216273
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     SettingsStore.RoomSettingsDict[room].Mode = OperationMode.Timed;
-                    SettingsStore.Save(); // Save here after user confirms changes
+                    SettingsStore.Save(); 
                 }
                 return true;
 
@@ -134,7 +125,7 @@ namespace diploma_216273
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     SettingsStore.RoomSettingsDict[room].Mode = OperationMode.Maintain;
-                    SettingsStore.Save(); // Save here after user confirms changes
+                    SettingsStore.Save(); 
                     
                 }
                 return true;
@@ -221,8 +212,7 @@ namespace diploma_216273
                 fSettingsTimed form = new fSettingsTimed(roomSettings.TimedSettings);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    // settings already modified through reference
-                    SettingsStore.Save(); // <-- Save here!
+                    SettingsStore.Save(); 
                 }
             }
             else
@@ -230,8 +220,7 @@ namespace diploma_216273
                 fSettingsMaintain form = new fSettingsMaintain(roomSettings.MaintainSettings);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    // settings already modified through reference
-                    SettingsStore.Save(); // <-- Save here too!
+                    SettingsStore.Save(); 
                 }
             }
         }

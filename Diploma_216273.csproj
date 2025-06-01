@@ -78,8 +78,6 @@
     <Compile Include="fSettingsTimed.Designer.cs">
       <DependentUpon>fSettingsTimed.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\MeasurementBuffer.cs" />
-    <Compile Include="Modules\RoomData.cs" />
     <Compile Include="Modules\RoomManager.cs" />
     <Compile Include="Modules\RandomNumbersGo.cs" />
     <Compile Include="Modules\RoomUI.cs" />
@@ -88,7 +86,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CsvLogger.cs" />
     <Compile Include="Services\RoomController.cs" />
-    <Compile Include="Services\RoomRuntimeState.cs" />
     <Compile Include="Services\SettingsStore.cs" />
     <Compile Include="Services\Timers.cs" />
     <Compile Include="Settings\MaintainSettings.cs" />
