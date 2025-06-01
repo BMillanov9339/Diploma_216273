@@ -1,12 +1,9 @@
 ﻿using diploma_216273.Settings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace diploma_216273.Services
 {
+    //Този модул контролира промяната на интерфейса на база на режимите на работа.
+    //В последствие, тези флагове ще се използват и от SensorReader за релетата, или ще направя нов модул, напр. RelayControl
     public class RoomController
     {
         private int heatTimerCounter = 0;

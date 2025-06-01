@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using System.Xml;
 using Newtonsoft.Json;
 using diploma_216273.Settings;
 
 namespace diploma_216273.Services
 {
 
+    //Зарежда настройките на всяко помещение. Ако не успее, връща към фабрични
     public static class SettingsStore
     {
         public static Dictionary<string, RoomSettings> RoomSettingsDict { get; } = new Dictionary<string, RoomSettings>();
@@ -30,7 +27,7 @@ namespace diploma_216273.Services
                 }
                 else
                 {
-                    // Optionally initialize defaults if file is missing or corrupted
+                    
                     InitializeDefaults();
                 }
             }
@@ -45,8 +42,8 @@ namespace diploma_216273.Services
             RoomSettingsDict.Clear();
             RoomSettingsDict["Room 1"] = new RoomSettings();
             RoomSettingsDict["Room 2"] = new RoomSettings();
-            //RoomSettingsDict["Room 3"] = new RoomSettings();
-            //RoomSettingsDict["Room 4"] = new RoomSettings();
+            RoomSettingsDict["Room 3"] = new RoomSettings();
+            RoomSettingsDict["Room 4"] = new RoomSettings();
         }
 
         public static string SettingsFilePath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.json");

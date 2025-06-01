@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//Сложено в отделен файл, защото очаквах да стане по-сложно
 namespace diploma_216273.Settings
 {
     public enum OperationMode

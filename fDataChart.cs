@@ -1,17 +1,11 @@
 ﻿using diploma_216273.Modules;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
+//Прозорец за графична визуализация на данни. Зарежда в реално време и от дата.
 
 namespace diploma_216273
 {
@@ -23,6 +17,8 @@ namespace diploma_216273
 
         public fDataChart(RoomManager sharedManager, string roomName)
         {
+            //нужна е връзка с управляващия клас, за да вземе името на стаята и настройките.
+            //Иначе се увеличава броят на формите.
             InitializeComponent();
             this.manager = sharedManager;
             this.roomName = roomName;
@@ -58,6 +54,7 @@ namespace diploma_216273
                 series.Points.AddXY(i, values[i]);
         }
 
+        //Тъй като се рестартира всяка секунда, е достатъчно да се смъкне флагът
         private void bDataCurrent_Click(object sender, EventArgs e)
         {
             isLoadingFromFile = false;
@@ -89,6 +86,7 @@ namespace diploma_216273
             }
         }
 
+        //Логиката тук подлежи на промяна, ако сменя начина на парсиране.
         private void LoadDataFromFile(string filePath)
         {
             List<string> times = new List<string>();
@@ -98,7 +96,7 @@ namespace diploma_216273
             try
             {
                 var lines = File.ReadAllLines(filePath);
-                for (int i = 1; i < lines.Length; i++) // Skip header
+                for (int i = 1; i < lines.Length; i++) 
                 {
                     var parts = lines[i].Split(new[] { ":::" }, StringSplitOptions.None);
                     if (parts.Length != 4) continue;

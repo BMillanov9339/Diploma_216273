@@ -1,14 +1,10 @@
 ﻿using diploma_216273.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using diploma_216273.Settings;
+
+
+//Настройки за режим поддържане
 
 namespace diploma_216273
 {
@@ -19,7 +15,7 @@ namespace diploma_216273
         {
             InitializeComponent();
 
-            this.settings = settings; // <-- This line was missing
+            this.settings = settings; 
 
             tTempMaintain.Text = settings.targetTemperature.ToString();
             tHumMaintain.Text = settings.targetHumidity.ToString();
@@ -29,7 +25,7 @@ namespace diploma_216273
         {
             settings.targetTemperature = float.Parse(tTempMaintain.Text);
             settings.targetHumidity = float.Parse(tHumMaintain.Text);
-            SettingsStore.Save(); // <-- Save to JSON
+            SettingsStore.Save(); 
 
             this.DialogResult = DialogResult.OK;
             this.Close();

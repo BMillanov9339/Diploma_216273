@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
+//Основна структура на интерфейса на едно помещение.
 
 namespace diploma_216273.Modules
 {

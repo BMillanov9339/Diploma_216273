@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Linq;
 
+
+//Настройки на контролера по SNMP. Към половината от тези адреси няма свързани сензори, но това просто означава, че нямам стойности.
+//Без валидни адреси, програмата се чупи
 public class RoomReading
 {
     public string RoomName { get; set; }
@@ -16,7 +19,7 @@ public class SensorReader
     private readonly string _ip;
     private readonly string _community;
 
-    // Maps each OID to a room and metric
+   
     private readonly List<(string Oid, string Room, string Metric)> _oidMap;
 
     public SensorReader(string ip, string community)

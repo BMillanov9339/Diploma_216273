@@ -5,17 +5,16 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using test4;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using diploma_216273.Settings;
-using diploma_216273.Properties;
-using System.Reflection.Emit;
 using System.Drawing;
 using System.Linq;
 
-
+//Тук се зарежда интерфейсът на цялата програма. По възможност, единственото, което се контролира тук, е дизайн
+//Всяка друга логика сочи към друг модул
 
 namespace diploma_216273
 { 
+    
     public partial class fDashboadMain : Form
     {
         private RoomManager manager;
@@ -66,7 +65,7 @@ namespace diploma_216273
                 }
             };
 
-            var room = "Room 1"; // or whichever you’re initializing
+            var room = "Room 1"; 
             var settings = SettingsStore.RoomSettingsDict[room];
 
             suppressFlag = true;
@@ -92,6 +91,7 @@ namespace diploma_216273
         }
         
 
+        //Различните прозорци за настройки, в зависимост от режима.
         private bool OpenTimedSettings(string room)
         {
             if (!SettingsStore.RoomSettingsDict.TryGetValue(room, out var roomSettings))
@@ -135,7 +135,8 @@ namespace diploma_216273
 
        
 
-
+        //10-те елемента отговарят за графиките над помещенията.
+        //Пълната хронология от 60 е за графиките, които се отварят в пълен прозорец
         private void UpdateChartSeries(Series series, double[] values, double addition)
         {
             series.Points.Clear();
@@ -172,6 +173,7 @@ namespace diploma_216273
                 updateCharts();
         }
 
+        //Контролира интерфейса за всяко помещение.
         private void UpdateSingleRoomUI(string room, double temp, double hum)
         {
             if (!roomUIs.ContainsKey(room))
@@ -203,6 +205,7 @@ namespace diploma_216273
         }
 
 
+        //Функции за бутоните
         private void buttonSettings_Click(string room, System.Windows.Forms.RadioButton button)
         {
             RoomSettings roomSettings = SettingsStore.RoomSettingsDict[room];
@@ -245,6 +248,8 @@ namespace diploma_216273
             buttonSettings_Click("Room 4", rbMaintainR4);
         }
 
+
+        //Визуализира графиките в пълен прозорец
         private void chDataR1_Click(object sender, EventArgs e)
         {
             chart = new fDataChart(this.manager, "Room 1");
@@ -271,6 +276,7 @@ namespace diploma_216273
         }
 
 
+        //Кликане на радио бутона отваря меню за настройки
 
         private void radioButtonSwitch(System.Windows.Forms.RadioButton button,string room)
         {

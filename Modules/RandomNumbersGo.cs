@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace diploma_216273.Modules
 {
+    //Генерира произволни числа. Използвано за тестове, преди да имплементирам модул за сензори
+
     public class RandomNumbersGo
     {
         private double randomFloat = 0;

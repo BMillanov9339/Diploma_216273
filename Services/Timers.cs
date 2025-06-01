@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-
-//using diploma_216273.Modules;
+﻿using System.Timers;
 
 namespace diploma_216273.Services
 {
+    //Вътрешен таймер, контролира процесите и флаговете
+
     public class Timers
     {
         private Timer _timer;

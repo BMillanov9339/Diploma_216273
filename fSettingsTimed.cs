@@ -1,15 +1,11 @@
 ﻿using diploma_216273.Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using diploma_216273.Settings;
 
+//Настройки режим Времево.
+//Namespace-a не иска да си смени името. Останалите успяха.
+//Това е един от най-старите прозорци в приложението, така че след време се отказах
 namespace test4
 {
     public partial class fSettingsTimed : Form
@@ -20,7 +16,7 @@ namespace test4
         {
             InitializeComponent();
 
-            this.settings = settings; // <-- This line was missing
+            this.settings = settings;
 
             slTempOn.Value = settings.tempTimeOn;
             slTempOff.Value = settings.tempTimeOff;
@@ -31,14 +27,13 @@ namespace test4
 
         private void bSaveTimed_Click(object sender, EventArgs e)
         {
-            //RoomSettingsDict["Room 1"].Mode = OperationMode.Timed;
             settings.tempTimeOn = slTempOn.Value;
             settings.tempTimeOff = slTempOff.Value;
 
             settings.humTimeOn = slHumOn.Value;
             settings.humTimeOff = slHumOff.Value;
 
-            SettingsStore.Save(); // <-- Save to JSON
+            SettingsStore.Save(); 
 
             this.DialogResult = DialogResult.OK;
             this.Close();
