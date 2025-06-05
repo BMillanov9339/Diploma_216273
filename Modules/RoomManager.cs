@@ -98,15 +98,23 @@ namespace diploma_216273.Modules
 
                 if (timers.getTimerFlag())
                 {
-                        SensorReader reader = new SensorReader("172.16.1.200", "public");
-                        var data = reader.Read();
+                    //SensorReader reader = new SensorReader("172.16.1.200", "public");
+                   // Dictionary<string, (string Heat, string Vent)> roomRelays = new Dictionary<string, (string, string)>
+{
+                    //{ "Room1", ("Room1_Heat", "Room1_Vent") },
+                   // { "Room2", ("Room2_Heat", "Room2_Vent") },
+                    // Add more rooms as needed
+};
+                    //var data = reader.Read();
 
-                        foreach (var room in roomControllers.Keys)
+                    foreach (var room in roomControllers.Keys)
                         {
-                            // tempVal = RandomNumbersGo.GetRandomDouble() * 100;
+                            tempVal = RandomNumbersGo.GetRandomDouble() * 100;
+                            humVal = RandomNumbersGo.GetRandomDouble() * 100;
+
                             //Оставил съм вземането на произволно число с цел демонстрация
-                            tempVal = data[room].Temperature/1000;
-                            humVal = data[room].Humidity/1000;
+                            //tempVal = data[room].Temperature/1000;
+                            //humVal = data[room].Humidity/1000;
 
                             checkLimits();
                         
@@ -129,13 +137,16 @@ namespace diploma_216273.Modules
                             HeatStatus[room] = controller.IsHeatOn;
                             VentStatus[room] = controller.IsVentOn;
 
-                            if (room == "Room 1")
-                            {
-                                labelHeatFlag = controller.IsHeatOn;
-                                labelVentFlag = controller.IsVentOn;
-                            }
-
+                        /*
+                        if (roomRelays.TryGetValue(room, out var relays))
+                        {
+                            relayController.SetRelayState(relays.Heat, controller.IsHeatOn);
+                            relayController.SetRelayState(relays.Vent, controller.IsVentOn);
                         }
+                        */
+
+
+                    }
 
                     secondCounter++;
                     if (secondCounter >= timeMinute)

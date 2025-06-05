@@ -91,6 +91,11 @@
             this.rbMaintainR3 = new System.Windows.Forms.RadioButton();
             this.chDataR3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label17 = new System.Windows.Forms.Label();
+            this.bLogin = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelLoginStatus = new System.Windows.Forms.Label();
+            this.bLogout = new System.Windows.Forms.Button();
+            this.bChangePassword = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -207,6 +212,7 @@
             this.bSettingsR1.TabIndex = 9;
             this.bSettingsR1.Text = "Settings";
             this.bSettingsR1.UseVisualStyleBackColor = true;
+            this.bSettingsR1.Visible = false;
             this.bSettingsR1.Click += new System.EventHandler(this.bSettingsR1_Click);
             // 
             // rbTimedR1
@@ -218,6 +224,7 @@
             this.rbTimedR1.TabIndex = 8;
             this.rbTimedR1.Text = "Timed";
             this.rbTimedR1.UseVisualStyleBackColor = true;
+            this.rbTimedR1.Visible = false;
             // 
             // rbMaintainR1
             // 
@@ -230,6 +237,7 @@
             this.rbMaintainR1.TabStop = true;
             this.rbMaintainR1.Text = "Maintain";
             this.rbMaintainR1.UseVisualStyleBackColor = true;
+            this.rbMaintainR1.Visible = false;
             this.rbMaintainR1.CheckedChanged += new System.EventHandler(this.rbMaintainR1_CheckedChanged);
             // 
             // chDataR1
@@ -382,6 +390,7 @@
             this.bSettingsR2.TabIndex = 9;
             this.bSettingsR2.Text = "Settings";
             this.bSettingsR2.UseVisualStyleBackColor = true;
+            this.bSettingsR2.Visible = false;
             this.bSettingsR2.Click += new System.EventHandler(this.bSettingsR2_Click);
             // 
             // rbTimedR2
@@ -393,6 +402,7 @@
             this.rbTimedR2.TabIndex = 8;
             this.rbTimedR2.Text = "Timed";
             this.rbTimedR2.UseVisualStyleBackColor = true;
+            this.rbTimedR2.Visible = false;
             // 
             // rbMaintainR2
             // 
@@ -405,6 +415,7 @@
             this.rbMaintainR2.TabStop = true;
             this.rbMaintainR2.Text = "Maintain";
             this.rbMaintainR2.UseVisualStyleBackColor = true;
+            this.rbMaintainR2.Visible = false;
             this.rbMaintainR2.CheckedChanged += new System.EventHandler(this.rbMaintainR2_CheckedChanged);
             // 
             // chDataR2
@@ -556,6 +567,7 @@
             this.bSettingsR4.TabIndex = 9;
             this.bSettingsR4.Text = "Settings";
             this.bSettingsR4.UseVisualStyleBackColor = true;
+            this.bSettingsR4.Visible = false;
             this.bSettingsR4.Click += new System.EventHandler(this.bSettingsR4_Click);
             // 
             // rbTimedR4
@@ -567,6 +579,7 @@
             this.rbTimedR4.TabIndex = 8;
             this.rbTimedR4.Text = "Timed";
             this.rbTimedR4.UseVisualStyleBackColor = true;
+            this.rbTimedR4.Visible = false;
             // 
             // rbMaintainR4
             // 
@@ -579,6 +592,7 @@
             this.rbMaintainR4.TabStop = true;
             this.rbMaintainR4.Text = "Maintain";
             this.rbMaintainR4.UseVisualStyleBackColor = true;
+            this.rbMaintainR4.Visible = false;
             this.rbMaintainR4.CheckedChanged += new System.EventHandler(this.rbMaintainR4_CheckedChanged);
             // 
             // chDataR4
@@ -730,6 +744,7 @@
             this.bSettingsR3.TabIndex = 9;
             this.bSettingsR3.Text = "Settings";
             this.bSettingsR3.UseVisualStyleBackColor = true;
+            this.bSettingsR3.Visible = false;
             this.bSettingsR3.Click += new System.EventHandler(this.bSettingsR3_Click);
             // 
             // rbTimedR3
@@ -741,6 +756,7 @@
             this.rbTimedR3.TabIndex = 8;
             this.rbTimedR3.Text = "Timed";
             this.rbTimedR3.UseVisualStyleBackColor = true;
+            this.rbTimedR3.Visible = false;
             // 
             // rbMaintainR3
             // 
@@ -753,6 +769,7 @@
             this.rbMaintainR3.TabStop = true;
             this.rbMaintainR3.Text = "Maintain";
             this.rbMaintainR3.UseVisualStyleBackColor = true;
+            this.rbMaintainR3.Visible = false;
             this.rbMaintainR3.CheckedChanged += new System.EventHandler(this.rbMaintainR3_CheckedChanged);
             // 
             // chDataR3
@@ -816,12 +833,69 @@
             this.label17.TabIndex = 12;
             this.label17.Text = "ROOM 3";
             // 
+            // bLogin
+            // 
+            this.bLogin.Location = new System.Drawing.Point(1165, 225);
+            this.bLogin.Name = "bLogin";
+            this.bLogin.Size = new System.Drawing.Size(191, 46);
+            this.bLogin.TabIndex = 16;
+            this.bLogin.Text = "Log In";
+            this.bLogin.UseVisualStyleBackColor = true;
+            this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(1167, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 31);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Logged in as:";
+            // 
+            // labelLoginStatus
+            // 
+            this.labelLoginStatus.AutoSize = true;
+            this.labelLoginStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelLoginStatus.Location = new System.Drawing.Point(1197, 159);
+            this.labelLoginStatus.Name = "labelLoginStatus";
+            this.labelLoginStatus.Size = new System.Drawing.Size(132, 37);
+            this.labelLoginStatus.TabIndex = 18;
+            this.labelLoginStatus.Text = "GUEST";
+            // 
+            // bLogout
+            // 
+            this.bLogout.Location = new System.Drawing.Point(1165, 290);
+            this.bLogout.Name = "bLogout";
+            this.bLogout.Size = new System.Drawing.Size(191, 46);
+            this.bLogout.TabIndex = 19;
+            this.bLogout.Text = "Log Out";
+            this.bLogout.UseVisualStyleBackColor = true;
+            this.bLogout.Visible = false;
+            this.bLogout.Click += new System.EventHandler(this.bLogout_Click);
+            // 
+            // bChangePassword
+            // 
+            this.bChangePassword.Location = new System.Drawing.Point(1165, 659);
+            this.bChangePassword.Name = "bChangePassword";
+            this.bChangePassword.Size = new System.Drawing.Size(191, 46);
+            this.bChangePassword.TabIndex = 20;
+            this.bChangePassword.Text = "Change Password";
+            this.bChangePassword.UseVisualStyleBackColor = true;
+            this.bChangePassword.Visible = false;
+            this.bChangePassword.Click += new System.EventHandler(this.bChangePassword_Click);
+            // 
             // fDashboadMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1256, 735);
+            this.ClientSize = new System.Drawing.Size(1387, 735);
+            this.Controls.Add(this.bChangePassword);
+            this.Controls.Add(this.bLogout);
+            this.Controls.Add(this.labelLoginStatus);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bLogin);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label12);
@@ -908,6 +982,11 @@
         private System.Windows.Forms.RadioButton rbMaintainR3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chDataR3;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button bLogin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelLoginStatus;
+        private System.Windows.Forms.Button bLogout;
+        private System.Windows.Forms.Button bChangePassword;
     }
 }
 

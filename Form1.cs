@@ -19,13 +19,18 @@ namespace diploma_216273
     {
         private RoomManager manager;
         private fDataChart chart;
+        private fLogin login;
+        private fChangePassword changePassword;
         private Dictionary<string, RoomUI> roomUIs;
 
         bool suppressFlag = false;
+        
         public fDashboadMain()
         {
             SettingsStore.Load();
             manager = new RoomManager();
+            login = new fLogin();
+            changePassword = new fChangePassword();
 
             InitializeComponent();
 
@@ -156,15 +161,17 @@ namespace diploma_216273
 
             Action updateCharts = () =>
             {
-                if(ui.Chart != null)
+                if (ui.Chart.Series.FindByName("seriesTemp") != null && ui.Chart.Series.FindByName("seriesHum") != null)
                 {
-                    if (ui.Chart.Series.IndexOf("seriesTemp") >= 0)
-                        UpdateChartSeries(ui.Chart.Series["seriesTemp"], temps10, 250);
+                    var seriesTemp = ui.Chart.Series.FindByName("seriesTemp");
+                    if (seriesTemp != null)
+                        UpdateChartSeries(seriesTemp, temps10, 250);
 
-                    if (ui.Chart.Series.IndexOf("seriesHum") >= 0)
-                        UpdateChartSeries(ui.Chart.Series["seriesHum"], hums10, 0);
+                    var seriesHum = ui.Chart.Series.FindByName("seriesHum");
+                    if (seriesHum != null)
+                        UpdateChartSeries(seriesHum, hums10, 0);
                 }
-                
+
             };
 
             if (InvokeRequired)
@@ -173,11 +180,53 @@ namespace diploma_216273
                 updateCharts();
         }
 
+        private void setSettingUI(bool flag)
+        {
+            bLogout.Visible = flag;
+            bChangePassword.Visible = flag;
+
+            bSettingsR1.Visible = flag;
+            bSettingsR2.Visible = flag;
+            bSettingsR3.Visible = flag;
+            bSettingsR4.Visible = flag;
+
+            rbMaintainR1.Visible = flag;
+            rbMaintainR2.Visible = flag;
+            rbMaintainR3.Visible = flag;
+            rbMaintainR4.Visible = flag;
+
+            rbTimedR1.Visible = flag;
+            rbTimedR2.Visible = flag;
+            rbTimedR3.Visible = flag;
+            rbTimedR4.Visible = flag;
+        }
+        private void checkAdminFlag()
+        {
+            bool adminFlagCheck = login.adminFlag;
+
+            switch (adminFlagCheck)
+            {
+                case true:
+                    labelLoginStatus.Text = "ADMIN";
+                    break;
+
+                case false:
+                    labelLoginStatus.Text = "GUEST";
+                    break;
+
+                default:
+                    break;
+            }
+
+            setSettingUI(adminFlagCheck);
+        }
         //Контролира интерфейса за всяко помещение.
         private void UpdateSingleRoomUI(string room, double temp, double hum)
         {
             if (!roomUIs.ContainsKey(room))
                 return;
+
+            
 
             var ui = roomUIs[room];
             string tempString = string.Format("{0:F2}°C", temp);
@@ -185,6 +234,7 @@ namespace diploma_216273
 
             Action updateAction = () =>
             {
+                checkAdminFlag();
                 ui.LabelTemp.Text = tempString;
                 ui.LabelHum.Text = humString;
 
@@ -335,6 +385,22 @@ namespace diploma_216273
             radioButtonSwitch(rbMaintainR4, selectedRoom);
         }
 
-        
+        private void bLogin_Click(object sender, EventArgs e)
+        {
+            //fSettingsTimed form = new fSettingsTimed(roomSettings.TimedSettings);
+            login = new fLogin();
+            login.ShowDialog();
+        }
+
+        private void bLogout_Click(object sender, EventArgs e)
+        {
+            login.adminFlag = false;
+        }
+
+        private void bChangePassword_Click(object sender, EventArgs e)
+        {
+            changePassword = new fChangePassword();
+            changePassword.ShowDialog();
+        }
     }
 }
