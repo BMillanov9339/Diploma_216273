@@ -116,7 +116,7 @@
       <DependentUpon>fSettingsTimed.cs</DependentUpon>
     </Compile>
     <Compile Include="Managers\PasswordManager.cs" />
-    <Compile Include="Managers\RelayController.cs" />
+    <Compile Include="Services\RelayController.cs" />
     <Compile Include="Managers\RoomManager.cs" />
     <Compile Include="Services\RandomNumbersGo.cs" />
     <Compile Include="Managers\RoomUI.cs" />
