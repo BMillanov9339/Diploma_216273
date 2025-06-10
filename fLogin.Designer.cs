@@ -83,7 +83,7 @@
             this.Controls.Add(this.tPassword);
             this.Controls.Add(this.label2);
             this.Name = "fLogin";
-            this.Text = "fLogin";
+            this.Text = "Login as Administrator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using diploma_216273.Settings;
+using System.Reflection.Emit;
 
 //Настройки режим Времево.
 //Namespace-a не иска да си смени името. Останалите успяха.
@@ -23,6 +24,8 @@ namespace test4
 
             slHumOn.Value = settings.humTimeOn;
             slHumOff.Value = settings.humTimeOff;
+
+            sliderInit();
         }
 
         private void bSaveTimed_Click(object sender, EventArgs e)
@@ -42,6 +45,39 @@ namespace test4
         private void bCancelTimed_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        void sliderInit()
+        {
+            sliderScroll("TIME ON", slTempOn.Value, labelHTimeOn);
+            sliderScroll("TIME OFF", slTempOff.Value, labelHTimeOff);
+            sliderScroll("TIME ON", slHumOn.Value, labelVTimeOn);
+            sliderScroll("TIME OFF", slHumOff.Value, labelVTimeOff);
+        }
+
+        void sliderScroll(string str, int sliderValue, System.Windows.Forms.Label label)
+        {
+            label.Text = String.Format("{0}: {1}m", str, sliderValue);
+        }
+
+        private void slTempOn_Scroll(object sender, EventArgs e)
+        {
+            sliderScroll("TIME ON", slTempOn.Value, labelHTimeOn);
+        }
+
+        private void slTempOff_Scroll(object sender, EventArgs e)
+        {
+            sliderScroll("TIME OFF", slTempOff.Value, labelHTimeOff);
+        }
+
+        private void slHumOn_Scroll(object sender, EventArgs e)
+        {
+            sliderScroll("TIME ON", slHumOn.Value, labelVTimeOn);
+        }
+
+        private void slHumOff_Scroll(object sender, EventArgs e)
+        {
+            sliderScroll("TIME OFF", slHumOff.Value, labelVTimeOff);
         }
     }
 }

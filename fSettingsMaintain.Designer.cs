@@ -131,7 +131,7 @@
             this.Controls.Add(this.tHumMaintain);
             this.Controls.Add(this.tTempMaintain);
             this.Name = "fSettingsMaintain";
-            this.Text = "fSettingsMaintain";
+            this.Text = "Settings (Maintain)";
             this.ResumeLayout(false);
             this.PerformLayout();
 

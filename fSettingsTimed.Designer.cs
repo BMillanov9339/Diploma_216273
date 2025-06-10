@@ -30,12 +30,12 @@
         {
             this.slTempOn = new System.Windows.Forms.TrackBar();
             this.slTempOff = new System.Windows.Forms.TrackBar();
-            this.labelTimeOn = new System.Windows.Forms.Label();
-            this.labelTimeOff = new System.Windows.Forms.Label();
+            this.labelHTimeOn = new System.Windows.Forms.Label();
+            this.labelHTimeOff = new System.Windows.Forms.Label();
             this.bSaveTimed = new System.Windows.Forms.Button();
             this.bCancelTimed = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelVTimeOff = new System.Windows.Forms.Label();
+            this.labelVTimeOn = new System.Windows.Forms.Label();
             this.slHumOff = new System.Windows.Forms.TrackBar();
             this.slHumOn = new System.Windows.Forms.TrackBar();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.slTempOn.Size = new System.Drawing.Size(136, 45);
             this.slTempOn.TabIndex = 0;
             this.slTempOn.Value = 1;
+            this.slTempOn.Scroll += new System.EventHandler(this.slTempOn_Scroll);
             // 
             // slTempOff
             // 
@@ -63,26 +64,27 @@
             this.slTempOff.Size = new System.Drawing.Size(136, 45);
             this.slTempOff.TabIndex = 1;
             this.slTempOff.Value = 1;
+            this.slTempOff.Scroll += new System.EventHandler(this.slTempOff_Scroll);
             // 
-            // labelTimeOn
+            // labelHTimeOn
             // 
-            this.labelTimeOn.AutoSize = true;
-            this.labelTimeOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTimeOn.Location = new System.Drawing.Point(52, 128);
-            this.labelTimeOn.Name = "labelTimeOn";
-            this.labelTimeOn.Size = new System.Drawing.Size(129, 25);
-            this.labelTimeOn.TabIndex = 2;
-            this.labelTimeOn.Text = "Time ON: 1m";
+            this.labelHTimeOn.AutoSize = true;
+            this.labelHTimeOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHTimeOn.Location = new System.Drawing.Point(52, 128);
+            this.labelHTimeOn.Name = "labelHTimeOn";
+            this.labelHTimeOn.Size = new System.Drawing.Size(129, 25);
+            this.labelHTimeOn.TabIndex = 2;
+            this.labelHTimeOn.Text = "Time ON: 1m";
             // 
-            // labelTimeOff
+            // labelHTimeOff
             // 
-            this.labelTimeOff.AutoSize = true;
-            this.labelTimeOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTimeOff.Location = new System.Drawing.Point(50, 218);
-            this.labelTimeOff.Name = "labelTimeOff";
-            this.labelTimeOff.Size = new System.Drawing.Size(139, 25);
-            this.labelTimeOff.TabIndex = 3;
-            this.labelTimeOff.Text = "Time OFF: 1m";
+            this.labelHTimeOff.AutoSize = true;
+            this.labelHTimeOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHTimeOff.Location = new System.Drawing.Point(50, 218);
+            this.labelHTimeOff.Name = "labelHTimeOff";
+            this.labelHTimeOff.Size = new System.Drawing.Size(139, 25);
+            this.labelHTimeOff.TabIndex = 3;
+            this.labelHTimeOff.Text = "Time OFF: 1m";
             // 
             // bSaveTimed
             // 
@@ -104,25 +106,25 @@
             this.bCancelTimed.UseVisualStyleBackColor = true;
             this.bCancelTimed.Click += new System.EventHandler(this.bCancelTimed_Click);
             // 
-            // label1
+            // labelVTimeOff
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(322, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Time OFF: 1m";
+            this.labelVTimeOff.AutoSize = true;
+            this.labelVTimeOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelVTimeOff.Location = new System.Drawing.Point(322, 218);
+            this.labelVTimeOff.Name = "labelVTimeOff";
+            this.labelVTimeOff.Size = new System.Drawing.Size(139, 25);
+            this.labelVTimeOff.TabIndex = 9;
+            this.labelVTimeOff.Text = "Time OFF: 1m";
             // 
-            // label2
+            // labelVTimeOn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(324, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 25);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Time ON: 1m";
+            this.labelVTimeOn.AutoSize = true;
+            this.labelVTimeOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelVTimeOn.Location = new System.Drawing.Point(324, 128);
+            this.labelVTimeOn.Name = "labelVTimeOn";
+            this.labelVTimeOn.Size = new System.Drawing.Size(129, 25);
+            this.labelVTimeOn.TabIndex = 8;
+            this.labelVTimeOn.Text = "Time ON: 1m";
             // 
             // slHumOff
             // 
@@ -132,6 +134,7 @@
             this.slHumOff.Size = new System.Drawing.Size(136, 45);
             this.slHumOff.TabIndex = 7;
             this.slHumOff.Value = 1;
+            this.slHumOff.Scroll += new System.EventHandler(this.slHumOff_Scroll);
             // 
             // slHumOn
             // 
@@ -141,6 +144,7 @@
             this.slHumOn.Size = new System.Drawing.Size(136, 45);
             this.slHumOn.TabIndex = 6;
             this.slHumOn.Value = 1;
+            this.slHumOn.Scroll += new System.EventHandler(this.slHumOn_Scroll);
             // 
             // label3
             // 
@@ -170,18 +174,18 @@
             this.ClientSize = new System.Drawing.Size(516, 481);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelVTimeOff);
+            this.Controls.Add(this.labelVTimeOn);
             this.Controls.Add(this.slHumOff);
             this.Controls.Add(this.slHumOn);
             this.Controls.Add(this.bCancelTimed);
             this.Controls.Add(this.bSaveTimed);
-            this.Controls.Add(this.labelTimeOff);
-            this.Controls.Add(this.labelTimeOn);
+            this.Controls.Add(this.labelHTimeOff);
+            this.Controls.Add(this.labelHTimeOn);
             this.Controls.Add(this.slTempOff);
             this.Controls.Add(this.slTempOn);
             this.Name = "fSettingsTimed";
-            this.Text = "fSettingsTimed";
+            this.Text = "Settings (Timed)";
             ((System.ComponentModel.ISupportInitialize)(this.slTempOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slTempOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slHumOff)).EndInit();
@@ -195,12 +199,12 @@
 
         private System.Windows.Forms.TrackBar slTempOn;
         private System.Windows.Forms.TrackBar slTempOff;
-        private System.Windows.Forms.Label labelTimeOn;
-        private System.Windows.Forms.Label labelTimeOff;
+        private System.Windows.Forms.Label labelHTimeOn;
+        private System.Windows.Forms.Label labelHTimeOff;
         private System.Windows.Forms.Button bSaveTimed;
         private System.Windows.Forms.Button bCancelTimed;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelVTimeOff;
+        private System.Windows.Forms.Label labelVTimeOn;
         private System.Windows.Forms.TrackBar slHumOff;
         private System.Windows.Forms.TrackBar slHumOn;
         private System.Windows.Forms.Label label3;

@@ -127,7 +127,7 @@
             this.Controls.Add(this.tOldPass);
             this.Controls.Add(this.label2);
             this.Name = "fChangePassword";
-            this.Text = "fChangePassword";
+            this.Text = "Change Password";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -905,7 +905,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.LRoom1);
             this.Name = "fDashboadMain";
-            this.Text = "Form1";
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

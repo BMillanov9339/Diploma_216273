@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabData = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.chTemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -41,6 +41,7 @@
             this.bDataCurrent = new System.Windows.Forms.Button();
             this.bDataLoad = new System.Windows.Forms.Button();
             this.dtpSelectDate = new System.Windows.Forms.DateTimePicker();
+            this.lDataRoom = new System.Windows.Forms.Label();
             this.tabData.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chTemp)).BeginInit();
@@ -67,52 +68,52 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(962, 516);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "seriesTemp";
+            this.tabPage1.Text = "Temperature History";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // chTemp
             // 
             this.chTemp.BackColor = System.Drawing.Color.DarkSlateGray;
             this.chTemp.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea5.AxisX.Interval = 1D;
-            chartArea5.AxisX.LabelStyle.Enabled = false;
-            chartArea5.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea5.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea5.AxisX.MajorGrid.Interval = 1D;
-            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea5.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea5.AxisX.MajorTickMark.Enabled = false;
-            chartArea5.AxisX.Maximum = 60D;
-            chartArea5.AxisX.Minimum = 0D;
-            chartArea5.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea5.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea5.AxisY.IsLabelAutoFit = false;
-            chartArea5.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            chartArea5.AxisY.LabelStyle.ForeColor = System.Drawing.Color.PowderBlue;
-            chartArea5.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea5.AxisY.MajorGrid.Interval = 10D;
-            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea5.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea5.AxisY.MajorGrid.LineWidth = 2;
-            chartArea5.AxisY.MajorTickMark.LineColor = System.Drawing.Color.LightCyan;
-            chartArea5.AxisY.Maximum = 120D;
-            chartArea5.AxisY.Minimum = 0D;
-            chartArea5.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea5.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea5.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea5.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea5.Name = "ChartArea1";
-            this.chTemp.ChartAreas.Add(chartArea5);
+            chartArea3.AxisX.Interval = 1D;
+            chartArea3.AxisX.LabelStyle.Enabled = false;
+            chartArea3.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea3.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea3.AxisX.MajorGrid.Interval = 1D;
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea3.AxisX.MajorTickMark.Enabled = false;
+            chartArea3.AxisX.Maximum = 60D;
+            chartArea3.AxisX.Minimum = 0D;
+            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea3.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea3.AxisY.IsLabelAutoFit = false;
+            chartArea3.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            chartArea3.AxisY.LabelStyle.ForeColor = System.Drawing.Color.PowderBlue;
+            chartArea3.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea3.AxisY.MajorGrid.Interval = 10D;
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea3.AxisY.MajorGrid.LineWidth = 2;
+            chartArea3.AxisY.MajorTickMark.LineColor = System.Drawing.Color.LightCyan;
+            chartArea3.AxisY.Maximum = 120D;
+            chartArea3.AxisY.Minimum = 0D;
+            chartArea3.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea3.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea3.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea3.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea3.Name = "ChartArea1";
+            this.chTemp.ChartAreas.Add(chartArea3);
             this.chTemp.Location = new System.Drawing.Point(-4, 0);
             this.chTemp.Name = "chTemp";
             this.chTemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series5.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series5.BorderWidth = 3;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Salmon;
-            series5.Name = "seriesTemp";
-            this.chTemp.Series.Add(series5);
+            series3.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Color = System.Drawing.Color.Salmon;
+            series3.Name = "seriesTemp";
+            this.chTemp.Series.Add(series3);
             this.chTemp.Size = new System.Drawing.Size(970, 527);
             this.chTemp.TabIndex = 9;
             this.chTemp.Text = "chart1";
@@ -125,52 +126,52 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(962, 516);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "seriesHum";
+            this.tabPage2.Text = "Humidity History";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // chHum
             // 
             this.chHum.BackColor = System.Drawing.Color.DarkSlateGray;
             this.chHum.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea6.AxisX.Interval = 1D;
-            chartArea6.AxisX.LabelStyle.Enabled = false;
-            chartArea6.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea6.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisX.MajorGrid.Interval = 1D;
-            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea6.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea6.AxisX.MajorTickMark.Enabled = false;
-            chartArea6.AxisX.Maximum = 60D;
-            chartArea6.AxisX.Minimum = 0D;
-            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea6.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea6.AxisY.IsLabelAutoFit = false;
-            chartArea6.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.PowderBlue;
-            chartArea6.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea6.AxisY.MajorGrid.Interval = 10D;
-            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea6.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea6.AxisY.MajorGrid.LineWidth = 2;
-            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.LightCyan;
-            chartArea6.AxisY.Maximum = 100D;
-            chartArea6.AxisY.Minimum = 0D;
-            chartArea6.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea6.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea6.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea6.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea6.Name = "ChartArea2";
-            this.chHum.ChartAreas.Add(chartArea6);
+            chartArea4.AxisX.Interval = 1D;
+            chartArea4.AxisX.LabelStyle.Enabled = false;
+            chartArea4.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea4.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea4.AxisX.MajorGrid.Interval = 1D;
+            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea4.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea4.AxisX.MajorTickMark.Enabled = false;
+            chartArea4.AxisX.Maximum = 60D;
+            chartArea4.AxisX.Minimum = 0D;
+            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea4.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea4.AxisY.IsLabelAutoFit = false;
+            chartArea4.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            chartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.PowderBlue;
+            chartArea4.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea4.AxisY.MajorGrid.Interval = 10D;
+            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea4.AxisY.MajorGrid.LineWidth = 2;
+            chartArea4.AxisY.MajorTickMark.LineColor = System.Drawing.Color.LightCyan;
+            chartArea4.AxisY.Maximum = 100D;
+            chartArea4.AxisY.Minimum = 0D;
+            chartArea4.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea4.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea4.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea4.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea4.Name = "ChartArea2";
+            this.chHum.ChartAreas.Add(chartArea4);
             this.chHum.Location = new System.Drawing.Point(-4, 0);
             this.chHum.Name = "chHum";
             this.chHum.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series6.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series6.BorderWidth = 3;
-            series6.ChartArea = "ChartArea2";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series6.Name = "seriesHum";
-            this.chHum.Series.Add(series6);
+            series4.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series4.BorderWidth = 3;
+            series4.ChartArea = "ChartArea2";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series4.Name = "seriesHum";
+            this.chHum.Series.Add(series4);
             this.chHum.Size = new System.Drawing.Size(970, 527);
             this.chHum.TabIndex = 10;
             this.chHum.Text = "chart1";
@@ -213,25 +214,37 @@
             this.dtpSelectDate.Size = new System.Drawing.Size(172, 20);
             this.dtpSelectDate.TabIndex = 4;
             // 
+            // lDataRoom
+            // 
+            this.lDataRoom.AutoSize = true;
+            this.lDataRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lDataRoom.Location = new System.Drawing.Point(112, 600);
+            this.lDataRoom.Name = "lDataRoom";
+            this.lDataRoom.Size = new System.Drawing.Size(148, 37);
+            this.lDataRoom.TabIndex = 13;
+            this.lDataRoom.Text = "ROOM 3";
+            // 
             // fDataChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(994, 678);
+            this.Controls.Add(this.lDataRoom);
             this.Controls.Add(this.dtpSelectDate);
             this.Controls.Add(this.bDataLoad);
             this.Controls.Add(this.bDataCurrent);
             this.Controls.Add(this.bExit);
             this.Controls.Add(this.tabData);
             this.Name = "fDataChart";
-            this.Text = "fDataChart";
+            this.Text = "Data";
             this.tabData.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chTemp)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chHum)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -246,5 +259,6 @@
         private System.Windows.Forms.Button bDataCurrent;
         private System.Windows.Forms.Button bDataLoad;
         private System.Windows.Forms.DateTimePicker dtpSelectDate;
+        private System.Windows.Forms.Label lDataRoom;
     }
 }

@@ -19,7 +19,7 @@ namespace diploma_216273
 
         private void bEnter_Click(object sender, EventArgs e)
         {
-            string password = tPassword.Text.Trim();
+            string password = tPassword.Text;
 
             if (PasswordManager.CheckPassword(password))
             {

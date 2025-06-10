@@ -28,6 +28,7 @@ namespace diploma_216273
         private void fDataChart_Load(object sender, EventArgs e)
         {
             manager.OnRoomChartDataUpdate += UpdateRoomChartsTask;
+            lDataRoom.Text = roomName;
         }
 
         private void UpdateRoomChartsTask(string room, double[] tempHistory, double[] humHistory)
