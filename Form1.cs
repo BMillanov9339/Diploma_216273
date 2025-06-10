@@ -1,4 +1,4 @@
-﻿using diploma_216273.Modules;
+﻿using diploma_216273.Managers;
 using diploma_216273.Services;
 using System;
 using System.Collections.Generic;

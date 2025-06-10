@@ -4,7 +4,7 @@ using System.Net;
 using Lextm.SharpSnmpLib;
 using Lextm.SharpSnmpLib.Messaging;
 
-namespace diploma_216273.Modules
+namespace diploma_216273.Managers
 {
     public class RelayController
     {

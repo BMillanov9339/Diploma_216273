@@ -2,7 +2,6 @@
 using System;
 using System.Windows.Forms;
 using diploma_216273.Settings;
-using System.Reflection.Emit;
 
 //Настройки режим Времево.
 //Namespace-a не иска да си смени името. Останалите успяха.

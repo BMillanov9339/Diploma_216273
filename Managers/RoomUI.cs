@@ -3,7 +3,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 //Основна структура на интерфейса на едно помещение.
 
-namespace diploma_216273.Modules
+namespace diploma_216273.Managers
 {
     public class RoomUI
     {

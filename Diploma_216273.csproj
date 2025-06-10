@@ -115,16 +115,16 @@
     <Compile Include="fSettingsTimed.Designer.cs">
       <DependentUpon>fSettingsTimed.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\PasswordManager.cs" />
-    <Compile Include="Modules\RelayController.cs" />
-    <Compile Include="Modules\RoomManager.cs" />
-    <Compile Include="Modules\RandomNumbersGo.cs" />
-    <Compile Include="Modules\RoomUI.cs" />
-    <Compile Include="Modules\SensorReader.cs" />
+    <Compile Include="Managers\PasswordManager.cs" />
+    <Compile Include="Managers\RelayController.cs" />
+    <Compile Include="Managers\RoomManager.cs" />
+    <Compile Include="Services\RandomNumbersGo.cs" />
+    <Compile Include="Managers\RoomUI.cs" />
+    <Compile Include="Services\SensorReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CsvLogger.cs" />
-    <Compile Include="Services\RoomController.cs" />
+    <Compile Include="Managers\RoomController.cs" />
     <Compile Include="Services\SettingsStore.cs" />
     <Compile Include="Services\Timers.cs" />
     <Compile Include="Settings\MaintainSettings.cs" />

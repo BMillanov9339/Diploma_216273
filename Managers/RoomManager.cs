@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using diploma_216273.Services;
 using diploma_216273.Settings;
 
-namespace diploma_216273.Modules
+namespace diploma_216273.Managers
 {
     //Този модул е междинният между интерфейса и данните. Тук минава голяма част от логиката, която не може да се реши в съответния модул.
 

@@ -1,6 +1,6 @@
 ﻿using diploma_216273.Settings;
 
-namespace diploma_216273.Services
+namespace diploma_216273.Managers
 {
     //Този модул контролира промяната на интерфейса на база на режимите на работа.
     //В последствие, тези флагове ще се използват и от SensorReader за релетата, или ще направя нов модул, напр. RelayControl

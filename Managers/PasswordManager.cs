@@ -2,7 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 
-namespace diploma_216273.Modules
+namespace diploma_216273.Managers
 {
     public static class PasswordManager
     {

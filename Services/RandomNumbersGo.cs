@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace diploma_216273.Modules
+namespace diploma_216273.Services
 {
     //Генерира произволни числа. Използвано за тестове, преди да имплементирам модул за сензори
 
