@@ -12,5 +12,7 @@ namespace diploma_216273.Managers
         public Label LabelHeaterState { get; set; }
         public Label LabelVentState { get; set; }
         public Chart Chart { get; set; }
+        public RadioButton RBMaintain { get; set; }
+        public RadioButton RBTimed { get; set; }
     }
 }

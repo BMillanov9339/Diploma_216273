@@ -8,6 +8,7 @@ using test4;
 using diploma_216273.Settings;
 using System.Drawing;
 using System.Linq;
+using diploma_216273.Properties;
 
 //Тук се зарежда интерфейсът на цялата програма. По възможност, единственото, което се контролира тук, е дизайн
 //Всяка друга логика сочи към друг модул
@@ -42,7 +43,9 @@ namespace diploma_216273
                     LabelHum = labelHumR1,
                     LabelHeaterState = labelHeaterStateR1,
                     LabelVentState = labelVentStateR1,
-                    Chart = chDataR1
+                    Chart = chDataR1,
+                    RBMaintain = rbMaintainR1,
+                    RBTimed = rbTimedR1,
                 },
                 ["Room 2"] = new RoomUI
                 {
@@ -50,7 +53,9 @@ namespace diploma_216273
                     LabelHum = labelHumR2,
                     LabelHeaterState = labelHeaterStateR2,
                     LabelVentState = labelVentStateR2,
-                    Chart = chDataR2
+                    Chart = chDataR2,
+                    RBMaintain = rbMaintainR2,
+                    RBTimed = rbTimedR2,
                 },
                 ["Room 3"] = new RoomUI
                 {
@@ -58,7 +63,9 @@ namespace diploma_216273
                     LabelHum = labelHumR3,
                     LabelHeaterState = labelHeaterStateR3,
                     LabelVentState = labelVentStateR3,
-                    Chart = chDataR3
+                    Chart = chDataR3,
+                    RBMaintain = rbMaintainR3,
+                    RBTimed = rbTimedR3,
                 },
                 ["Room 4"] = new RoomUI
                 {
@@ -66,21 +73,33 @@ namespace diploma_216273
                     LabelHum = labelHumR4,
                     LabelHeaterState = labelHeaterStateR4,
                     LabelVentState = labelVentStateR4,
-                    Chart = chDataR4
+                    Chart = chDataR4,
+                    RBMaintain = rbMaintainR4,
+                    RBTimed = rbTimedR4,
                 }
             };
 
-            var room = "Room 1"; 
-            var settings = SettingsStore.RoomSettingsDict[room];
+            foreach (var room in SettingsStore.RoomSettingsDict.Keys)
+            {
+                var settings = SettingsStore.RoomSettingsDict[room];
 
-            suppressFlag = true;
+                suppressFlag = true;
 
-            if (settings.Mode == OperationMode.Timed)
-                rbTimedR1.Checked = true;
-            else
-                rbMaintainR1.Checked = true;
+                if (settings.Mode == OperationMode.Timed)
+                {
+                    roomUIs[room].RBMaintain.Checked = false;
+                    roomUIs[room].RBTimed.Checked = true;
+                }
 
-            suppressFlag = false;
+                else
+                {
+                    roomUIs[room].RBMaintain.Checked = true;
+                    roomUIs[room].RBTimed.Checked = false;
+                }
+                    
+
+                suppressFlag = false;
+            }
 
             manager.OnRoomSensorUpdate += UpdateSingleRoomUI;
             manager.OnChartDataUpdate += UpdateChartForRoom;
@@ -133,6 +152,12 @@ namespace diploma_216273
                     SettingsStore.Save(); 
                     
                 }
+
+                else 
+                {
+                    return false;
+                }
+
                 return true;
                 
             }
@@ -161,8 +186,8 @@ namespace diploma_216273
 
             Action updateCharts = () =>
             {
-                if (ui.Chart.Series.FindByName("seriesTemp") != null && ui.Chart.Series.FindByName("seriesHum") != null)
-                {
+                try 
+                { 
                     var seriesTemp = ui.Chart.Series.FindByName("seriesTemp");
                     if (seriesTemp != null)
                         UpdateChartSeries(seriesTemp, temps10, 250);
@@ -172,6 +197,7 @@ namespace diploma_216273
                         UpdateChartSeries(seriesHum, hums10, 0);
                 }
 
+                catch { }
             };
 
             if (InvokeRequired)
@@ -246,6 +272,26 @@ namespace diploma_216273
 
                 ui.LabelVentState.Text = ventOn ? "Ventilation: ON" : "Ventilation: OFF";
                 ui.LabelVentState.ForeColor = ventOn ? Color.Lime : Color.Red;
+
+                
+                var settings = SettingsStore.RoomSettingsDict[room];
+
+                suppressFlag = true;
+
+                if (settings.Mode == OperationMode.Timed)
+                {
+                    roomUIs[room].RBMaintain.Checked = false;
+                    roomUIs[room].RBTimed.Checked = true;
+                }
+
+                else
+                {
+                    roomUIs[room].RBMaintain.Checked = true;
+                    roomUIs[room].RBTimed.Checked = false;
+                }
+
+                suppressFlag = false;
+                
             };
 
             if (InvokeRequired)
@@ -330,30 +376,22 @@ namespace diploma_216273
 
         private void radioButtonSwitch(System.Windows.Forms.RadioButton button,string room)
         {
-            bool settings = false;
+            bool settingsChanged = false;
+            var roomSettings = SettingsStore.RoomSettingsDict[room];
 
             if (!suppressFlag)
             {
-                if (!button.Checked)
+                if (roomSettings.Mode == OperationMode.Maintain)
                 {
-                    settings = OpenTimedSettings(room);
+                    settingsChanged = OpenTimedSettings(room);
                 }
 
                 else
                 {
-                    settings = OpenMaintainSettings(room);
-                }
-
-                if (!settings)
-                {
-                    suppressFlag = true;
-                    button.Checked = !button.Checked;
-                    suppressFlag = false;
-                    return;
+                    settingsChanged = OpenMaintainSettings(room);
                 }
             }
 
-            
         }
         private void rbMaintainR1_CheckedChanged(object sender, EventArgs e)
         {

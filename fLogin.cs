@@ -1,8 +1,5 @@
 ﻿using diploma_216273.Managers;
 using System;
-using System.Security.Cryptography;
-using System.Security.Policy;
-using System.Text;
 using System.Windows.Forms;
 
 namespace diploma_216273
@@ -19,18 +16,29 @@ namespace diploma_216273
 
         private void bEnter_Click(object sender, EventArgs e)
         {
+            bool passwordValidLength = true;
             string password = tPassword.Text;
 
-            if (PasswordManager.CheckPassword(password))
+            if (password.Length > 20 || password.Length < 4)
             {
-                MessageBox.Show("Login successful");
-                adminFlag = true;
-                this.Hide();
+                MessageBox.Show("Password can be between 5 and 20 characters");
+                passwordValidLength = false;
             }
-            else
+
+            if (passwordValidLength)
             {
-                MessageBox.Show("Incorrect password");
+                if (PasswordManager.CheckPassword(password))
+                {
+                    MessageBox.Show("Login successful");
+                    adminFlag = true;
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password");
+                }
             }
+            
 
         }
 
