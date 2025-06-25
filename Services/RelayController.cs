@@ -22,8 +22,10 @@ namespace diploma_216273.Services
 
             _relayOids = new Dictionary<string, ObjectIdentifier>
         {
-            { "Relay1", new ObjectIdentifier("1.3.6.1.4.1.12345.3.1.0") },
-            { "Relay2", new ObjectIdentifier("1.3.6.1.4.1.12345.3.2.0") }
+             { "Relay1", new ObjectIdentifier("1.3.6.1.4.1.38783.3.3.4.1.1.0") },
+             { "Relay2", new ObjectIdentifier("1.3.6.1.4.1.38783.3.3.4.2.1.0") },
+             { "Relay3", new ObjectIdentifier("1.3.6.1.4.1.38783.3.3.4.3.1.0") },
+             { "Relay4", new ObjectIdentifier("1.3.6.1.4.1.38783.3.3.4.4.1.0") }
         };
         }
 

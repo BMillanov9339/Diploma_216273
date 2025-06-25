@@ -8,7 +8,6 @@ using test4;
 using diploma_216273.Settings;
 using System.Drawing;
 using System.Linq;
-using diploma_216273.Properties;
 
 //Тук се зарежда интерфейсът на цялата програма. По възможност, единственото, което се контролира тук, е дизайн
 //Всяка друга логика сочи към друг модул
@@ -57,6 +56,7 @@ namespace diploma_216273
                     RBMaintain = rbMaintainR2,
                     RBTimed = rbTimedR2,
                 },
+                
                 ["Room 3"] = new RoomUI
                 {
                     LabelTemp = labelTempR3,
@@ -77,6 +77,7 @@ namespace diploma_216273
                     RBMaintain = rbMaintainR4,
                     RBTimed = rbTimedR4,
                 }
+                
             };
 
             foreach (var room in SettingsStore.RoomSettingsDict.Keys)
@@ -334,6 +335,7 @@ namespace diploma_216273
             buttonSettings_Click("Room 2", rbMaintainR2);
         }
 
+        
         private void bSettingsR3_Click(object sender, EventArgs e)
         {
             buttonSettings_Click("Room 3", rbMaintainR3);
@@ -343,7 +345,7 @@ namespace diploma_216273
         {
             buttonSettings_Click("Room 4", rbMaintainR4);
         }
-
+        
 
         //Визуализира графиките в пълен прозорец
         private void chDataR1_Click(object sender, EventArgs e)
@@ -359,6 +361,7 @@ namespace diploma_216273
 
         }
 
+        
         private void chDataR3_Click(object sender, EventArgs e)
         {
             chart = new fDataChart(this.manager, "Room 3");
@@ -370,6 +373,7 @@ namespace diploma_216273
             chart = new fDataChart(this.manager, "Room 4");
             chart.Show();
         }
+        
 
 
         //Кликане на радио бутона отваря меню за настройки
@@ -408,6 +412,7 @@ namespace diploma_216273
 
         }
 
+        
         private void rbMaintainR3_CheckedChanged(object sender, EventArgs e)
         {
             string selectedRoom = "Room 3";
@@ -422,6 +427,7 @@ namespace diploma_216273
 
             radioButtonSwitch(rbMaintainR4, selectedRoom);
         }
+        
 
         private void bLogin_Click(object sender, EventArgs e)
         {
@@ -440,5 +446,7 @@ namespace diploma_216273
             changePassword = new fChangePassword();
             changePassword.ShowDialog();
         }
+
+       
     }
 }

@@ -42,11 +42,11 @@ namespace diploma_216273.Services
             RoomSettingsDict.Clear();
             RoomSettingsDict["Room 1"] = new RoomSettings();
             RoomSettingsDict["Room 2"] = new RoomSettings();
-            RoomSettingsDict["Room 3"] = new RoomSettings();
-            RoomSettingsDict["Room 4"] = new RoomSettings();
+          //  RoomSettingsDict["Room 3"] = new RoomSettings();
+           // RoomSettingsDict["Room 4"] = new RoomSettings();
         }
 
-        public static string SettingsFilePath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.json");
+        public static string SettingsFilePath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings", "settings.json");
 
         public static void Save()
         {

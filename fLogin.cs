@@ -11,7 +11,9 @@ namespace diploma_216273
 
         public fLogin()
         {
+            
             InitializeComponent();
+            tPassword.UseSystemPasswordChar = !cShowText.Checked;
         }
 
         private void bEnter_Click(object sender, EventArgs e)
@@ -46,6 +48,11 @@ namespace diploma_216273
         {
             this.Close();
 
+        }
+
+        private void cShowText_CheckedChanged(object sender, EventArgs e)
+        {
+            tPassword.UseSystemPasswordChar = !cShowText.Checked;
         }
     }
 

@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tConfirm = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cShowText = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // bExit
@@ -112,12 +113,25 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Confirm:";
             // 
+            // cShowText
+            // 
+            this.cShowText.AutoSize = true;
+            this.cShowText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cShowText.Location = new System.Drawing.Point(286, 223);
+            this.cShowText.Name = "cShowText";
+            this.cShowText.Size = new System.Drawing.Size(102, 24);
+            this.cShowText.TabIndex = 14;
+            this.cShowText.Text = "Show Text";
+            this.cShowText.UseVisualStyleBackColor = true;
+            this.cShowText.CheckedChanged += new System.EventHandler(this.cShowText_CheckedChanged);
+            // 
             // fChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(444, 377);
+            this.Controls.Add(this.cShowText);
             this.Controls.Add(this.tConfirm);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tNewPass);
@@ -143,5 +157,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tConfirm;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox cShowText;
     }
 }

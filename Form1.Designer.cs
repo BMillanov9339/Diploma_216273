@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.LineAnnotation lineAnnotation1 = new System.Windows.Forms.DataVisualization.Charting.LineAnnotation();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.LineAnnotation lineAnnotation3 = new System.Windows.Forms.DataVisualization.Charting.LineAnnotation();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.LRoom1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,19 +67,11 @@
             this.rbMaintainR2 = new System.Windows.Forms.RadioButton();
             this.chDataR2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.labelHumR4 = new System.Windows.Forms.Label();
-            this.labelVentStateR4 = new System.Windows.Forms.Label();
-            this.labelTempR4 = new System.Windows.Forms.Label();
-            this.labelHeaterStateR4 = new System.Windows.Forms.Label();
-            this.bSettingsR4 = new System.Windows.Forms.Button();
-            this.rbTimedR4 = new System.Windows.Forms.RadioButton();
-            this.rbMaintainR4 = new System.Windows.Forms.RadioButton();
-            this.chDataR4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.bLogin = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelLoginStatus = new System.Windows.Forms.Label();
+            this.bLogout = new System.Windows.Forms.Button();
+            this.bChangePassword = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labelHumR3 = new System.Windows.Forms.Label();
@@ -89,13 +81,21 @@
             this.bSettingsR3 = new System.Windows.Forms.Button();
             this.rbTimedR3 = new System.Windows.Forms.RadioButton();
             this.rbMaintainR3 = new System.Windows.Forms.RadioButton();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.chDataR3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label17 = new System.Windows.Forms.Label();
-            this.bLogin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelLoginStatus = new System.Windows.Forms.Label();
-            this.bLogout = new System.Windows.Forms.Button();
-            this.bChangePassword = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.labelHumR4 = new System.Windows.Forms.Label();
+            this.labelVentStateR4 = new System.Windows.Forms.Label();
+            this.labelTempR4 = new System.Windows.Forms.Label();
+            this.labelHeaterStateR4 = new System.Windows.Forms.Label();
+            this.bSettingsR4 = new System.Windows.Forms.Button();
+            this.rbTimedR4 = new System.Windows.Forms.RadioButton();
+            this.rbMaintainR4 = new System.Windows.Forms.RadioButton();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.chDataR4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,14 +104,14 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chDataR2)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chDataR4)).BeginInit();
-            this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chDataR3)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chDataR4)).BeginInit();
             this.SuspendLayout();
             // 
             // LRoom1
@@ -165,7 +165,7 @@
             this.labelHumR1.Name = "labelHumR1";
             this.labelHumR1.Size = new System.Drawing.Size(165, 37);
             this.labelHumR1.TabIndex = 11;
-            this.labelHumR1.Text = "label2";
+            this.labelHumR1.Text = "-- --";
             this.labelHumR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelVentStateR1
@@ -177,7 +177,7 @@
             this.labelVentStateR1.Name = "labelVentStateR1";
             this.labelVentStateR1.Size = new System.Drawing.Size(167, 24);
             this.labelVentStateR1.TabIndex = 11;
-            this.labelVentStateR1.Text = "Ventilation: ON";
+            this.labelVentStateR1.Text = "No Connection";
             this.labelVentStateR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTempR1
@@ -189,7 +189,7 @@
             this.labelTempR1.Name = "labelTempR1";
             this.labelTempR1.Size = new System.Drawing.Size(167, 37);
             this.labelTempR1.TabIndex = 10;
-            this.labelTempR1.Text = "label1";
+            this.labelTempR1.Text = "-- --";
             this.labelTempR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelHeaterStateR1
@@ -201,7 +201,7 @@
             this.labelHeaterStateR1.Name = "labelHeaterStateR1";
             this.labelHeaterStateR1.Size = new System.Drawing.Size(169, 31);
             this.labelHeaterStateR1.TabIndex = 10;
-            this.labelHeaterStateR1.Text = "Heater: ON";
+            this.labelHeaterStateR1.Text = "No Connection";
             this.labelHeaterStateR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bSettingsR1
@@ -242,64 +242,64 @@
             // 
             // chDataR1
             // 
-            lineAnnotation1.Name = "LineAnnotation1";
-            lineAnnotation1.Visible = false;
-            this.chDataR1.Annotations.Add(lineAnnotation1);
+            lineAnnotation3.Name = "LineAnnotation1";
+            lineAnnotation3.Visible = false;
+            this.chDataR1.Annotations.Add(lineAnnotation3);
             this.chDataR1.BackColor = System.Drawing.Color.Transparent;
             this.chDataR1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.Interval = 1D;
-            chartArea1.AxisX.LabelStyle.Enabled = false;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea1.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.AxisX.MajorGrid.Interval = 2D;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisX.Maximum = 10D;
-            chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea1.AxisY.LabelStyle.Enabled = false;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea1.AxisY.MajorGrid.Interval = 50D;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea1.AxisY.MajorGrid.LineWidth = 2;
-            chartArea1.AxisY.Maximum = 500D;
-            chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea1.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea1.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea1.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea1.Name = "ChartArea1";
-            this.chDataR1.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.chDataR1.Legends.Add(legend1);
+            chartArea9.AxisX.Interval = 1D;
+            chartArea9.AxisX.LabelStyle.Enabled = false;
+            chartArea9.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea9.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea9.AxisX.MajorGrid.Interval = 2D;
+            chartArea9.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea9.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea9.AxisX.MajorTickMark.Enabled = false;
+            chartArea9.AxisX.Maximum = 10D;
+            chartArea9.AxisX.Minimum = 0D;
+            chartArea9.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea9.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea9.AxisY.LabelStyle.Enabled = false;
+            chartArea9.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea9.AxisY.MajorGrid.Interval = 50D;
+            chartArea9.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea9.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea9.AxisY.MajorGrid.LineWidth = 2;
+            chartArea9.AxisY.Maximum = 500D;
+            chartArea9.AxisY.Minimum = 0D;
+            chartArea9.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea9.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea9.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea9.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea9.Name = "ChartArea1";
+            this.chDataR1.ChartAreas.Add(chartArea9);
+            legend3.Enabled = false;
+            legend3.Name = "Legend1";
+            this.chDataR1.Legends.Add(legend3);
             this.chDataR1.Location = new System.Drawing.Point(15, 3);
             this.chDataR1.Name = "chDataR1";
             this.chDataR1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Salmon;
-            series1.Legend = "Legend1";
-            series1.Name = "seriesTemp";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series2.Legend = "Legend1";
-            series2.Name = "seriesHum";
-            this.chDataR1.Series.Add(series1);
-            this.chDataR1.Series.Add(series2);
+            series17.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series17.BorderWidth = 3;
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Color = System.Drawing.Color.Salmon;
+            series17.Legend = "Legend1";
+            series17.Name = "seriesTemp";
+            series18.BorderWidth = 3;
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series18.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series18.Legend = "Legend1";
+            series18.Name = "seriesHum";
+            this.chDataR1.Series.Add(series17);
+            this.chDataR1.Series.Add(series18);
             this.chDataR1.Size = new System.Drawing.Size(180, 320);
             this.chDataR1.TabIndex = 8;
             this.chDataR1.Text = "chart1";
-            title1.Name = "Title1";
-            title1.Visible = false;
-            this.chDataR1.Titles.Add(title1);
+            title3.Name = "Title1";
+            title3.Visible = false;
+            this.chDataR1.Titles.Add(title3);
             this.chDataR1.Click += new System.EventHandler(this.chDataR1_Click);
             // 
             // panel4
@@ -343,7 +343,7 @@
             this.labelHumR2.Name = "labelHumR2";
             this.labelHumR2.Size = new System.Drawing.Size(165, 37);
             this.labelHumR2.TabIndex = 11;
-            this.labelHumR2.Text = "label3";
+            this.labelHumR2.Text = "-- --";
             this.labelHumR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelVentStateR2
@@ -355,7 +355,7 @@
             this.labelVentStateR2.Name = "labelVentStateR2";
             this.labelVentStateR2.Size = new System.Drawing.Size(167, 24);
             this.labelVentStateR2.TabIndex = 11;
-            this.labelVentStateR2.Text = "Ventilation: ON";
+            this.labelVentStateR2.Text = "No Connection";
             this.labelVentStateR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTempR2
@@ -367,7 +367,7 @@
             this.labelTempR2.Name = "labelTempR2";
             this.labelTempR2.Size = new System.Drawing.Size(167, 37);
             this.labelTempR2.TabIndex = 10;
-            this.labelTempR2.Text = "label5";
+            this.labelTempR2.Text = "-- --";
             this.labelTempR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelHeaterStateR2
@@ -379,7 +379,7 @@
             this.labelHeaterStateR2.Name = "labelHeaterStateR2";
             this.labelHeaterStateR2.Size = new System.Drawing.Size(169, 31);
             this.labelHeaterStateR2.TabIndex = 10;
-            this.labelHeaterStateR2.Text = "Heater: ON";
+            this.labelHeaterStateR2.Text = "No Connection";
             this.labelHeaterStateR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bSettingsR2
@@ -422,48 +422,48 @@
             // 
             this.chDataR2.BackColor = System.Drawing.Color.Transparent;
             this.chDataR2.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.Interval = 1D;
-            chartArea2.AxisX.LabelStyle.Enabled = false;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea2.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea2.AxisX.MajorGrid.Interval = 2D;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea2.AxisX.MajorTickMark.Enabled = false;
-            chartArea2.AxisX.Maximum = 10D;
-            chartArea2.AxisX.Minimum = 0D;
-            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea2.AxisY.LabelStyle.Enabled = false;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea2.AxisY.MajorGrid.Interval = 50D;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea2.AxisY.MajorGrid.LineWidth = 2;
-            chartArea2.AxisY.Maximum = 500D;
-            chartArea2.AxisY.Minimum = 0D;
-            chartArea2.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea2.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea2.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea2.Name = "ChartArea1";
-            this.chDataR2.ChartAreas.Add(chartArea2);
+            chartArea10.AxisX.Interval = 1D;
+            chartArea10.AxisX.LabelStyle.Enabled = false;
+            chartArea10.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea10.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea10.AxisX.MajorGrid.Interval = 2D;
+            chartArea10.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea10.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea10.AxisX.MajorTickMark.Enabled = false;
+            chartArea10.AxisX.Maximum = 10D;
+            chartArea10.AxisX.Minimum = 0D;
+            chartArea10.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea10.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea10.AxisY.LabelStyle.Enabled = false;
+            chartArea10.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea10.AxisY.MajorGrid.Interval = 50D;
+            chartArea10.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea10.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea10.AxisY.MajorGrid.LineWidth = 2;
+            chartArea10.AxisY.Maximum = 500D;
+            chartArea10.AxisY.Minimum = 0D;
+            chartArea10.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea10.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea10.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea10.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea10.Name = "ChartArea1";
+            this.chDataR2.ChartAreas.Add(chartArea10);
             this.chDataR2.Location = new System.Drawing.Point(15, 3);
             this.chDataR2.Name = "chDataR2";
             this.chDataR2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series3.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series3.BorderWidth = 3;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Color = System.Drawing.Color.Salmon;
-            series3.Name = "seriesTemp";
-            series4.BorderWidth = 3;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series4.Name = "seriesHum";
-            this.chDataR2.Series.Add(series3);
-            this.chDataR2.Series.Add(series4);
+            series19.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series19.BorderWidth = 3;
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Color = System.Drawing.Color.Salmon;
+            series19.Name = "seriesTemp";
+            series20.BorderWidth = 3;
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series20.Name = "seriesHum";
+            this.chDataR2.Series.Add(series19);
+            this.chDataR2.Series.Add(series20);
             this.chDataR2.Size = new System.Drawing.Size(180, 320);
             this.chDataR2.TabIndex = 8;
             this.chDataR2.Text = "chart1";
@@ -478,360 +478,6 @@
             this.label7.Size = new System.Drawing.Size(148, 37);
             this.label7.TabIndex = 10;
             this.label7.Text = "ROOM 2";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.chDataR4);
-            this.panel7.Location = new System.Drawing.Point(908, 90);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(212, 621);
-            this.panel7.TabIndex = 15;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.bSettingsR4);
-            this.panel8.Controls.Add(this.rbTimedR4);
-            this.panel8.Controls.Add(this.rbMaintainR4);
-            this.panel8.Location = new System.Drawing.Point(19, 329);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(175, 289);
-            this.panel8.TabIndex = 9;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel9.Controls.Add(this.labelHumR4);
-            this.panel9.Controls.Add(this.labelVentStateR4);
-            this.panel9.Controls.Add(this.labelTempR4);
-            this.panel9.Controls.Add(this.labelHeaterStateR4);
-            this.panel9.Location = new System.Drawing.Point(3, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(167, 201);
-            this.panel9.TabIndex = 9;
-            // 
-            // labelHumR4
-            // 
-            this.labelHumR4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelHumR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHumR4.ForeColor = System.Drawing.Color.Lime;
-            this.labelHumR4.Location = new System.Drawing.Point(4, 46);
-            this.labelHumR4.Name = "labelHumR4";
-            this.labelHumR4.Size = new System.Drawing.Size(165, 37);
-            this.labelHumR4.TabIndex = 11;
-            this.labelHumR4.Text = "label8";
-            this.labelHumR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelVentStateR4
-            // 
-            this.labelVentStateR4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelVentStateR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelVentStateR4.ForeColor = System.Drawing.Color.Lime;
-            this.labelVentStateR4.Location = new System.Drawing.Point(0, 149);
-            this.labelVentStateR4.Name = "labelVentStateR4";
-            this.labelVentStateR4.Size = new System.Drawing.Size(167, 24);
-            this.labelVentStateR4.TabIndex = 11;
-            this.labelVentStateR4.Text = "Ventilation: ON";
-            this.labelVentStateR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelTempR4
-            // 
-            this.labelTempR4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelTempR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTempR4.ForeColor = System.Drawing.Color.Lime;
-            this.labelTempR4.Location = new System.Drawing.Point(4, 9);
-            this.labelTempR4.Name = "labelTempR4";
-            this.labelTempR4.Size = new System.Drawing.Size(167, 37);
-            this.labelTempR4.TabIndex = 10;
-            this.labelTempR4.Text = "label10";
-            this.labelTempR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelHeaterStateR4
-            // 
-            this.labelHeaterStateR4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelHeaterStateR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHeaterStateR4.ForeColor = System.Drawing.Color.Lime;
-            this.labelHeaterStateR4.Location = new System.Drawing.Point(0, 118);
-            this.labelHeaterStateR4.Name = "labelHeaterStateR4";
-            this.labelHeaterStateR4.Size = new System.Drawing.Size(169, 31);
-            this.labelHeaterStateR4.TabIndex = 10;
-            this.labelHeaterStateR4.Text = "Heater: ON";
-            this.labelHeaterStateR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bSettingsR4
-            // 
-            this.bSettingsR4.Location = new System.Drawing.Point(3, 251);
-            this.bSettingsR4.Name = "bSettingsR4";
-            this.bSettingsR4.Size = new System.Drawing.Size(169, 35);
-            this.bSettingsR4.TabIndex = 9;
-            this.bSettingsR4.Text = "Settings";
-            this.bSettingsR4.UseVisualStyleBackColor = true;
-            this.bSettingsR4.Visible = false;
-            this.bSettingsR4.Click += new System.EventHandler(this.bSettingsR4_Click);
-            // 
-            // rbTimedR4
-            // 
-            this.rbTimedR4.AutoSize = true;
-            this.rbTimedR4.Location = new System.Drawing.Point(116, 228);
-            this.rbTimedR4.Name = "rbTimedR4";
-            this.rbTimedR4.Size = new System.Drawing.Size(54, 17);
-            this.rbTimedR4.TabIndex = 8;
-            this.rbTimedR4.Text = "Timed";
-            this.rbTimedR4.UseVisualStyleBackColor = true;
-            this.rbTimedR4.Visible = false;
-            // 
-            // rbMaintainR4
-            // 
-            this.rbMaintainR4.AutoSize = true;
-            this.rbMaintainR4.Checked = true;
-            this.rbMaintainR4.Location = new System.Drawing.Point(3, 228);
-            this.rbMaintainR4.Name = "rbMaintainR4";
-            this.rbMaintainR4.Size = new System.Drawing.Size(65, 17);
-            this.rbMaintainR4.TabIndex = 7;
-            this.rbMaintainR4.TabStop = true;
-            this.rbMaintainR4.Text = "Maintain";
-            this.rbMaintainR4.UseVisualStyleBackColor = true;
-            this.rbMaintainR4.Visible = false;
-            this.rbMaintainR4.CheckedChanged += new System.EventHandler(this.rbMaintainR4_CheckedChanged);
-            // 
-            // chDataR4
-            // 
-            this.chDataR4.BackColor = System.Drawing.Color.Transparent;
-            this.chDataR4.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea3.AxisX.Interval = 1D;
-            chartArea3.AxisX.LabelStyle.Enabled = false;
-            chartArea3.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea3.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.AxisX.MajorGrid.Interval = 2D;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea3.AxisX.MajorTickMark.Enabled = false;
-            chartArea3.AxisX.Maximum = 10D;
-            chartArea3.AxisX.Minimum = 0D;
-            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea3.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea3.AxisY.LabelStyle.Enabled = false;
-            chartArea3.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea3.AxisY.MajorGrid.Interval = 50D;
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea3.AxisY.MajorGrid.LineWidth = 2;
-            chartArea3.AxisY.Maximum = 500D;
-            chartArea3.AxisY.Minimum = 0D;
-            chartArea3.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea3.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea3.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea3.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea3.Name = "ChartArea1";
-            this.chDataR4.ChartAreas.Add(chartArea3);
-            this.chDataR4.Location = new System.Drawing.Point(15, 3);
-            this.chDataR4.Name = "chDataR4";
-            this.chDataR4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series5.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series5.BorderWidth = 3;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Salmon;
-            series5.Name = "seriesTemp";
-            series6.BorderWidth = 3;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series6.Name = "seriesHum";
-            this.chDataR4.Series.Add(series5);
-            this.chDataR4.Series.Add(series6);
-            this.chDataR4.Size = new System.Drawing.Size(180, 320);
-            this.chDataR4.TabIndex = 8;
-            this.chDataR4.Text = "chart2";
-            this.chDataR4.Click += new System.EventHandler(this.chDataR4_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(949, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(148, 37);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "ROOM 4";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.chDataR3);
-            this.panel10.Location = new System.Drawing.Point(628, 90);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(212, 621);
-            this.panel10.TabIndex = 13;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.bSettingsR3);
-            this.panel11.Controls.Add(this.rbTimedR3);
-            this.panel11.Controls.Add(this.rbMaintainR3);
-            this.panel11.Location = new System.Drawing.Point(19, 329);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(175, 289);
-            this.panel11.TabIndex = 9;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel12.Controls.Add(this.labelHumR3);
-            this.panel12.Controls.Add(this.labelVentStateR3);
-            this.panel12.Controls.Add(this.labelTempR3);
-            this.panel12.Controls.Add(this.labelHeaterStateR3);
-            this.panel12.Location = new System.Drawing.Point(3, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(167, 201);
-            this.panel12.TabIndex = 9;
-            // 
-            // labelHumR3
-            // 
-            this.labelHumR3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelHumR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHumR3.ForeColor = System.Drawing.Color.Lime;
-            this.labelHumR3.Location = new System.Drawing.Point(4, 46);
-            this.labelHumR3.Name = "labelHumR3";
-            this.labelHumR3.Size = new System.Drawing.Size(165, 37);
-            this.labelHumR3.TabIndex = 11;
-            this.labelHumR3.Text = "label13";
-            this.labelHumR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelVentStateR3
-            // 
-            this.labelVentStateR3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelVentStateR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelVentStateR3.ForeColor = System.Drawing.Color.Lime;
-            this.labelVentStateR3.Location = new System.Drawing.Point(0, 149);
-            this.labelVentStateR3.Name = "labelVentStateR3";
-            this.labelVentStateR3.Size = new System.Drawing.Size(167, 24);
-            this.labelVentStateR3.TabIndex = 11;
-            this.labelVentStateR3.Text = "Ventilation: ON";
-            this.labelVentStateR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelTempR3
-            // 
-            this.labelTempR3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelTempR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTempR3.ForeColor = System.Drawing.Color.Lime;
-            this.labelTempR3.Location = new System.Drawing.Point(4, 9);
-            this.labelTempR3.Name = "labelTempR3";
-            this.labelTempR3.Size = new System.Drawing.Size(167, 37);
-            this.labelTempR3.TabIndex = 10;
-            this.labelTempR3.Text = "label15";
-            this.labelTempR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelHeaterStateR3
-            // 
-            this.labelHeaterStateR3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.labelHeaterStateR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelHeaterStateR3.ForeColor = System.Drawing.Color.Lime;
-            this.labelHeaterStateR3.Location = new System.Drawing.Point(0, 118);
-            this.labelHeaterStateR3.Name = "labelHeaterStateR3";
-            this.labelHeaterStateR3.Size = new System.Drawing.Size(169, 31);
-            this.labelHeaterStateR3.TabIndex = 10;
-            this.labelHeaterStateR3.Text = "Heater: ON";
-            this.labelHeaterStateR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bSettingsR3
-            // 
-            this.bSettingsR3.Location = new System.Drawing.Point(3, 251);
-            this.bSettingsR3.Name = "bSettingsR3";
-            this.bSettingsR3.Size = new System.Drawing.Size(169, 35);
-            this.bSettingsR3.TabIndex = 9;
-            this.bSettingsR3.Text = "Settings";
-            this.bSettingsR3.UseVisualStyleBackColor = true;
-            this.bSettingsR3.Visible = false;
-            this.bSettingsR3.Click += new System.EventHandler(this.bSettingsR3_Click);
-            // 
-            // rbTimedR3
-            // 
-            this.rbTimedR3.AutoSize = true;
-            this.rbTimedR3.Location = new System.Drawing.Point(116, 228);
-            this.rbTimedR3.Name = "rbTimedR3";
-            this.rbTimedR3.Size = new System.Drawing.Size(54, 17);
-            this.rbTimedR3.TabIndex = 8;
-            this.rbTimedR3.Text = "Timed";
-            this.rbTimedR3.UseVisualStyleBackColor = true;
-            this.rbTimedR3.Visible = false;
-            // 
-            // rbMaintainR3
-            // 
-            this.rbMaintainR3.AutoSize = true;
-            this.rbMaintainR3.Checked = true;
-            this.rbMaintainR3.Location = new System.Drawing.Point(3, 228);
-            this.rbMaintainR3.Name = "rbMaintainR3";
-            this.rbMaintainR3.Size = new System.Drawing.Size(65, 17);
-            this.rbMaintainR3.TabIndex = 7;
-            this.rbMaintainR3.TabStop = true;
-            this.rbMaintainR3.Text = "Maintain";
-            this.rbMaintainR3.UseVisualStyleBackColor = true;
-            this.rbMaintainR3.Visible = false;
-            this.rbMaintainR3.CheckedChanged += new System.EventHandler(this.rbMaintainR3_CheckedChanged);
-            // 
-            // chDataR3
-            // 
-            this.chDataR3.BackColor = System.Drawing.Color.Transparent;
-            this.chDataR3.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.LabelStyle.Enabled = false;
-            chartArea4.AxisX.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea4.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea4.AxisX.MajorGrid.Interval = 2D;
-            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea4.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea4.AxisX.MajorTickMark.Enabled = false;
-            chartArea4.AxisX.Maximum = 10D;
-            chartArea4.AxisX.Minimum = 0D;
-            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
-            chartArea4.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea4.AxisY.LabelStyle.Enabled = false;
-            chartArea4.AxisY.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea4.AxisY.MajorGrid.Interval = 50D;
-            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
-            chartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
-            chartArea4.AxisY.MajorGrid.LineWidth = 2;
-            chartArea4.AxisY.Maximum = 500D;
-            chartArea4.AxisY.Minimum = 0D;
-            chartArea4.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
-            chartArea4.BackColor = System.Drawing.Color.DarkSlateGray;
-            chartArea4.BackSecondaryColor = System.Drawing.Color.CadetBlue;
-            chartArea4.BorderColor = System.Drawing.Color.PowderBlue;
-            chartArea4.Name = "ChartArea1";
-            this.chDataR3.ChartAreas.Add(chartArea4);
-            this.chDataR3.Location = new System.Drawing.Point(15, 3);
-            this.chDataR3.Name = "chDataR3";
-            this.chDataR3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series7.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            series7.BorderWidth = 3;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.Salmon;
-            series7.Name = "seriesTemp";
-            series8.BorderWidth = 3;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series8.Name = "seriesHum";
-            this.chDataR3.Series.Add(series7);
-            this.chDataR3.Series.Add(series8);
-            this.chDataR3.Size = new System.Drawing.Size(180, 320);
-            this.chDataR3.TabIndex = 8;
-            this.chDataR3.Text = "chart1";
-            this.chDataR3.Click += new System.EventHandler(this.chDataR3_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(669, 30);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(148, 37);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "ROOM 3";
             // 
             // bLogin
             // 
@@ -885,6 +531,360 @@
             this.bChangePassword.Visible = false;
             this.bChangePassword.Click += new System.EventHandler(this.bChangePassword_Click);
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Controls.Add(this.bSettingsR3);
+            this.panel11.Controls.Add(this.rbTimedR3);
+            this.panel11.Controls.Add(this.rbMaintainR3);
+            this.panel11.Location = new System.Drawing.Point(19, 329);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(175, 289);
+            this.panel11.TabIndex = 9;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel12.Controls.Add(this.labelHumR3);
+            this.panel12.Controls.Add(this.labelVentStateR3);
+            this.panel12.Controls.Add(this.labelTempR3);
+            this.panel12.Controls.Add(this.labelHeaterStateR3);
+            this.panel12.Location = new System.Drawing.Point(3, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(167, 201);
+            this.panel12.TabIndex = 9;
+            // 
+            // labelHumR3
+            // 
+            this.labelHumR3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelHumR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHumR3.ForeColor = System.Drawing.Color.Lime;
+            this.labelHumR3.Location = new System.Drawing.Point(4, 46);
+            this.labelHumR3.Name = "labelHumR3";
+            this.labelHumR3.Size = new System.Drawing.Size(165, 37);
+            this.labelHumR3.TabIndex = 11;
+            this.labelHumR3.Text = "-- --";
+            this.labelHumR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelVentStateR3
+            // 
+            this.labelVentStateR3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelVentStateR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelVentStateR3.ForeColor = System.Drawing.Color.Lime;
+            this.labelVentStateR3.Location = new System.Drawing.Point(0, 149);
+            this.labelVentStateR3.Name = "labelVentStateR3";
+            this.labelVentStateR3.Size = new System.Drawing.Size(167, 24);
+            this.labelVentStateR3.TabIndex = 11;
+            this.labelVentStateR3.Text = "No Connection";
+            this.labelVentStateR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTempR3
+            // 
+            this.labelTempR3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelTempR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTempR3.ForeColor = System.Drawing.Color.Lime;
+            this.labelTempR3.Location = new System.Drawing.Point(4, 9);
+            this.labelTempR3.Name = "labelTempR3";
+            this.labelTempR3.Size = new System.Drawing.Size(167, 37);
+            this.labelTempR3.TabIndex = 10;
+            this.labelTempR3.Text = "-- --";
+            this.labelTempR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHeaterStateR3
+            // 
+            this.labelHeaterStateR3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelHeaterStateR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHeaterStateR3.ForeColor = System.Drawing.Color.Lime;
+            this.labelHeaterStateR3.Location = new System.Drawing.Point(0, 118);
+            this.labelHeaterStateR3.Name = "labelHeaterStateR3";
+            this.labelHeaterStateR3.Size = new System.Drawing.Size(169, 31);
+            this.labelHeaterStateR3.TabIndex = 10;
+            this.labelHeaterStateR3.Text = "No Connection";
+            this.labelHeaterStateR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bSettingsR3
+            // 
+            this.bSettingsR3.Location = new System.Drawing.Point(3, 251);
+            this.bSettingsR3.Name = "bSettingsR3";
+            this.bSettingsR3.Size = new System.Drawing.Size(169, 35);
+            this.bSettingsR3.TabIndex = 9;
+            this.bSettingsR3.Text = "Settings";
+            this.bSettingsR3.UseVisualStyleBackColor = true;
+            this.bSettingsR3.Visible = false;
+            this.bSettingsR3.Click += new System.EventHandler(this.bSettingsR3_Click);
+            // 
+            // rbTimedR3
+            // 
+            this.rbTimedR3.AutoSize = true;
+            this.rbTimedR3.Location = new System.Drawing.Point(116, 228);
+            this.rbTimedR3.Name = "rbTimedR3";
+            this.rbTimedR3.Size = new System.Drawing.Size(54, 17);
+            this.rbTimedR3.TabIndex = 8;
+            this.rbTimedR3.Text = "Timed";
+            this.rbTimedR3.UseVisualStyleBackColor = true;
+            this.rbTimedR3.Visible = false;
+            // 
+            // rbMaintainR3
+            // 
+            this.rbMaintainR3.AutoSize = true;
+            this.rbMaintainR3.Checked = true;
+            this.rbMaintainR3.Location = new System.Drawing.Point(3, 228);
+            this.rbMaintainR3.Name = "rbMaintainR3";
+            this.rbMaintainR3.Size = new System.Drawing.Size(65, 17);
+            this.rbMaintainR3.TabIndex = 7;
+            this.rbMaintainR3.TabStop = true;
+            this.rbMaintainR3.Text = "Maintain";
+            this.rbMaintainR3.UseVisualStyleBackColor = true;
+            this.rbMaintainR3.Visible = false;
+            this.rbMaintainR3.CheckedChanged += new System.EventHandler(this.rbMaintainR3_CheckedChanged);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.chDataR3);
+            this.panel10.Location = new System.Drawing.Point(628, 90);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(212, 621);
+            this.panel10.TabIndex = 13;
+            // 
+            // chDataR3
+            // 
+            this.chDataR3.BackColor = System.Drawing.Color.Transparent;
+            this.chDataR3.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea11.AxisX.Interval = 1D;
+            chartArea11.AxisX.LabelStyle.Enabled = false;
+            chartArea11.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea11.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea11.AxisX.MajorGrid.Interval = 2D;
+            chartArea11.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea11.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea11.AxisX.MajorTickMark.Enabled = false;
+            chartArea11.AxisX.Maximum = 10D;
+            chartArea11.AxisX.Minimum = 0D;
+            chartArea11.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea11.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea11.AxisY.LabelStyle.Enabled = false;
+            chartArea11.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea11.AxisY.MajorGrid.Interval = 50D;
+            chartArea11.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea11.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea11.AxisY.MajorGrid.LineWidth = 2;
+            chartArea11.AxisY.Maximum = 500D;
+            chartArea11.AxisY.Minimum = 0D;
+            chartArea11.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea11.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea11.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea11.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea11.Name = "ChartArea1";
+            this.chDataR3.ChartAreas.Add(chartArea11);
+            this.chDataR3.Location = new System.Drawing.Point(15, 3);
+            this.chDataR3.Name = "chDataR3";
+            this.chDataR3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series21.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series21.BorderWidth = 3;
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Color = System.Drawing.Color.Salmon;
+            series21.Name = "seriesTemp";
+            series22.BorderWidth = 3;
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series22.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series22.Name = "seriesHum";
+            this.chDataR3.Series.Add(series21);
+            this.chDataR3.Series.Add(series22);
+            this.chDataR3.Size = new System.Drawing.Size(180, 320);
+            this.chDataR3.TabIndex = 8;
+            this.chDataR3.Text = "chart1";
+            this.chDataR3.Click += new System.EventHandler(this.chDataR3_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(669, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(148, 37);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "ROOM 3";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(949, 30);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(148, 37);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "ROOM 4";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.bSettingsR4);
+            this.panel8.Controls.Add(this.rbTimedR4);
+            this.panel8.Controls.Add(this.rbMaintainR4);
+            this.panel8.Location = new System.Drawing.Point(19, 329);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(175, 289);
+            this.panel8.TabIndex = 9;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel9.Controls.Add(this.labelHumR4);
+            this.panel9.Controls.Add(this.labelVentStateR4);
+            this.panel9.Controls.Add(this.labelTempR4);
+            this.panel9.Controls.Add(this.labelHeaterStateR4);
+            this.panel9.Location = new System.Drawing.Point(3, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(167, 201);
+            this.panel9.TabIndex = 9;
+            // 
+            // labelHumR4
+            // 
+            this.labelHumR4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelHumR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHumR4.ForeColor = System.Drawing.Color.Lime;
+            this.labelHumR4.Location = new System.Drawing.Point(4, 46);
+            this.labelHumR4.Name = "labelHumR4";
+            this.labelHumR4.Size = new System.Drawing.Size(165, 37);
+            this.labelHumR4.TabIndex = 11;
+            this.labelHumR4.Text = "-- --";
+            this.labelHumR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelVentStateR4
+            // 
+            this.labelVentStateR4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelVentStateR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelVentStateR4.ForeColor = System.Drawing.Color.Lime;
+            this.labelVentStateR4.Location = new System.Drawing.Point(0, 149);
+            this.labelVentStateR4.Name = "labelVentStateR4";
+            this.labelVentStateR4.Size = new System.Drawing.Size(167, 24);
+            this.labelVentStateR4.TabIndex = 11;
+            this.labelVentStateR4.Text = "No Connection";
+            this.labelVentStateR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelTempR4
+            // 
+            this.labelTempR4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelTempR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTempR4.ForeColor = System.Drawing.Color.Lime;
+            this.labelTempR4.Location = new System.Drawing.Point(4, 9);
+            this.labelTempR4.Name = "labelTempR4";
+            this.labelTempR4.Size = new System.Drawing.Size(167, 37);
+            this.labelTempR4.TabIndex = 10;
+            this.labelTempR4.Text = "-- --";
+            this.labelTempR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHeaterStateR4
+            // 
+            this.labelHeaterStateR4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.labelHeaterStateR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHeaterStateR4.ForeColor = System.Drawing.Color.Lime;
+            this.labelHeaterStateR4.Location = new System.Drawing.Point(0, 118);
+            this.labelHeaterStateR4.Name = "labelHeaterStateR4";
+            this.labelHeaterStateR4.Size = new System.Drawing.Size(169, 31);
+            this.labelHeaterStateR4.TabIndex = 10;
+            this.labelHeaterStateR4.Text = "No Connection";
+            this.labelHeaterStateR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bSettingsR4
+            // 
+            this.bSettingsR4.Location = new System.Drawing.Point(3, 251);
+            this.bSettingsR4.Name = "bSettingsR4";
+            this.bSettingsR4.Size = new System.Drawing.Size(169, 35);
+            this.bSettingsR4.TabIndex = 9;
+            this.bSettingsR4.Text = "Settings";
+            this.bSettingsR4.UseVisualStyleBackColor = true;
+            this.bSettingsR4.Visible = false;
+            this.bSettingsR4.Click += new System.EventHandler(this.bSettingsR4_Click);
+            // 
+            // rbTimedR4
+            // 
+            this.rbTimedR4.AutoSize = true;
+            this.rbTimedR4.Location = new System.Drawing.Point(116, 228);
+            this.rbTimedR4.Name = "rbTimedR4";
+            this.rbTimedR4.Size = new System.Drawing.Size(54, 17);
+            this.rbTimedR4.TabIndex = 8;
+            this.rbTimedR4.Text = "Timed";
+            this.rbTimedR4.UseVisualStyleBackColor = true;
+            this.rbTimedR4.Visible = false;
+            // 
+            // rbMaintainR4
+            // 
+            this.rbMaintainR4.AutoSize = true;
+            this.rbMaintainR4.Checked = true;
+            this.rbMaintainR4.Location = new System.Drawing.Point(3, 228);
+            this.rbMaintainR4.Name = "rbMaintainR4";
+            this.rbMaintainR4.Size = new System.Drawing.Size(65, 17);
+            this.rbMaintainR4.TabIndex = 7;
+            this.rbMaintainR4.TabStop = true;
+            this.rbMaintainR4.Text = "Maintain";
+            this.rbMaintainR4.UseVisualStyleBackColor = true;
+            this.rbMaintainR4.Visible = false;
+            this.rbMaintainR4.CheckedChanged += new System.EventHandler(this.rbMaintainR4_CheckedChanged);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.chDataR4);
+            this.panel7.Location = new System.Drawing.Point(908, 90);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(212, 621);
+            this.panel7.TabIndex = 15;
+            // 
+            // chDataR4
+            // 
+            this.chDataR4.BackColor = System.Drawing.Color.Transparent;
+            this.chDataR4.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea12.AxisX.Interval = 1D;
+            chartArea12.AxisX.LabelStyle.Enabled = false;
+            chartArea12.AxisX.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea12.AxisX.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea12.AxisX.MajorGrid.Interval = 2D;
+            chartArea12.AxisX.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea12.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea12.AxisX.MajorTickMark.Enabled = false;
+            chartArea12.AxisX.Maximum = 10D;
+            chartArea12.AxisX.Minimum = 0D;
+            chartArea12.AxisX.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea12.AxisX2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea12.AxisY.LabelStyle.Enabled = false;
+            chartArea12.AxisY.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea12.AxisY.MajorGrid.Interval = 50D;
+            chartArea12.AxisY.MajorGrid.LineColor = System.Drawing.Color.SteelBlue;
+            chartArea12.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            chartArea12.AxisY.MajorGrid.LineWidth = 2;
+            chartArea12.AxisY.Maximum = 500D;
+            chartArea12.AxisY.Minimum = 0D;
+            chartArea12.AxisY2.LineColor = System.Drawing.Color.CadetBlue;
+            chartArea12.BackColor = System.Drawing.Color.DarkSlateGray;
+            chartArea12.BackSecondaryColor = System.Drawing.Color.CadetBlue;
+            chartArea12.BorderColor = System.Drawing.Color.PowderBlue;
+            chartArea12.Name = "ChartArea1";
+            this.chDataR4.ChartAreas.Add(chartArea12);
+            this.chDataR4.Location = new System.Drawing.Point(15, 3);
+            this.chDataR4.Name = "chDataR4";
+            this.chDataR4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series23.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            series23.BorderWidth = 3;
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series23.Color = System.Drawing.Color.Salmon;
+            series23.Name = "seriesTemp";
+            series24.BorderWidth = 3;
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series24.Name = "seriesHum";
+            this.chDataR4.Series.Add(series23);
+            this.chDataR4.Series.Add(series24);
+            this.chDataR4.Size = new System.Drawing.Size(180, 320);
+            this.chDataR4.TabIndex = 8;
+            this.chDataR4.Text = "chart2";
+            this.chDataR4.Click += new System.EventHandler(this.chDataR4_Click);
+            // 
             // fDashboadMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -917,16 +917,16 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chDataR2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chDataR4)).EndInit();
-            this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chDataR3)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chDataR4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -958,19 +958,11 @@
         private System.Windows.Forms.RadioButton rbMaintainR2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chDataR2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label labelHumR4;
-        private System.Windows.Forms.Label labelVentStateR4;
-        private System.Windows.Forms.Label labelTempR4;
-        private System.Windows.Forms.Label labelHeaterStateR4;
-        private System.Windows.Forms.Button bSettingsR4;
-        private System.Windows.Forms.RadioButton rbTimedR4;
-        private System.Windows.Forms.RadioButton rbMaintainR4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chDataR4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button bLogin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelLoginStatus;
+        private System.Windows.Forms.Button bLogout;
+        private System.Windows.Forms.Button bChangePassword;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label labelHumR3;
@@ -980,13 +972,21 @@
         private System.Windows.Forms.Button bSettingsR3;
         private System.Windows.Forms.RadioButton rbTimedR3;
         private System.Windows.Forms.RadioButton rbMaintainR3;
+        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.DataVisualization.Charting.Chart chDataR3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button bLogin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelLoginStatus;
-        private System.Windows.Forms.Button bLogout;
-        private System.Windows.Forms.Button bChangePassword;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label labelHumR4;
+        private System.Windows.Forms.Label labelVentStateR4;
+        private System.Windows.Forms.Label labelTempR4;
+        private System.Windows.Forms.Label labelHeaterStateR4;
+        private System.Windows.Forms.Button bSettingsR4;
+        private System.Windows.Forms.RadioButton rbTimedR4;
+        private System.Windows.Forms.RadioButton rbMaintainR4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chDataR4;
     }
 }
 

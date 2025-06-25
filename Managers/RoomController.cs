@@ -25,7 +25,7 @@ namespace diploma_216273.Managers
             else if (settings.Mode == OperationMode.Maintain)
             {
                 IsHeatOn = currentTemp < settings.MaintainSettings.targetTemperature;
-                IsVentOn = currentHum < settings.MaintainSettings.targetHumidity;
+                IsVentOn = currentHum > settings.MaintainSettings.targetHumidity;
             }
         }
 

@@ -32,6 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bEnter = new System.Windows.Forms.Button();
             this.bExit = new System.Windows.Forms.Button();
+            this.cShowText = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tPassword
@@ -72,12 +73,25 @@
             this.bExit.UseVisualStyleBackColor = true;
             this.bExit.Click += new System.EventHandler(this.bExit_Click);
             // 
+            // cShowText
+            // 
+            this.cShowText.AutoSize = true;
+            this.cShowText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cShowText.Location = new System.Drawing.Point(236, 129);
+            this.cShowText.Name = "cShowText";
+            this.cShowText.Size = new System.Drawing.Size(102, 24);
+            this.cShowText.TabIndex = 6;
+            this.cShowText.Text = "Show Text";
+            this.cShowText.UseVisualStyleBackColor = true;
+            this.cShowText.CheckedChanged += new System.EventHandler(this.cShowText_CheckedChanged);
+            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(384, 284);
+            this.Controls.Add(this.cShowText);
             this.Controls.Add(this.bExit);
             this.Controls.Add(this.bEnter);
             this.Controls.Add(this.tPassword);
@@ -94,5 +108,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bEnter;
         private System.Windows.Forms.Button bExit;
+        private System.Windows.Forms.CheckBox cShowText;
     }
 }

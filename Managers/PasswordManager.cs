@@ -9,7 +9,7 @@ namespace diploma_216273.Managers
         public static byte[] StoredSalt { get; private set; }
         public static byte[] StoredHash { get; private set; }
 
-        private static string PasswordFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Password.txt");
+        private static string PasswordFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "admin", "Password.txt");
 
         static PasswordManager()
         {
